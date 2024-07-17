@@ -43,7 +43,6 @@ class CustomerGet(APIView):
 
     def get(self, request):
         user = request.user
-
         if isinstance(user, Customer):
             if not user.has_perm('adminapp.view_customer'):
                 return Response({'success': False, 'message': 'Permission denied customer'}, status=403)
