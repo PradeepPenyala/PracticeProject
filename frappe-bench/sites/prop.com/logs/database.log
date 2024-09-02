@@ -1,0 +1,228 @@
+2024-09-02 16:14:44,059 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format` MODIFY `align_labels_right` int(1) not null default 0, MODIFY `custom_format` int(1) not null default 0, MODIFY `absolute_value` int(1) not null default 0, MODIFY `print_format_builder_beta` int(1) not null default 0, MODIFY `line_breaks` int(1) not null default 0, MODIFY `disabled` int(1) not null default 0, MODIFY `print_format_builder` int(1) not null default 0, MODIFY `raw_printing` int(1) not null default 0, MODIFY `show_section_headings` int(1) not null default 0
+2024-09-02 16:14:44,197 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Page` MODIFY `show_title` int(1) not null default 0, MODIFY `published` int(1) not null default 1, MODIFY `dynamic_route` int(1) not null default 0, MODIFY `dynamic_template` int(1) not null default 0, MODIFY `enable_comments` int(1) not null default 0, MODIFY `full_width` int(1) not null default 1, MODIFY `show_sidebar` int(1) not null default 0, MODIFY `insert_style` int(1) not null default 0
+2024-09-02 16:14:44,316 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebsite Theme` MODIFY `button_rounded_corners` int(1) not null default 1, MODIFY `button_gradients` int(1) not null default 0, MODIFY `button_shadows` int(1) not null default 0, MODIFY `custom` int(1) not null default 1
+2024-09-02 16:14:44,459 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification` MODIFY `send_system_notification` int(1) not null default 0, MODIFY `is_standard` int(1) not null default 0, MODIFY `enabled` int(1) not null default 1, MODIFY `attach_print` int(1) not null default 0, MODIFY `send_to_all_assignees` int(1) not null default 0
+2024-09-02 16:14:44,551 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Style` MODIFY `standard` int(1) not null default 0, MODIFY `disabled` int(1) not null default 0
+2024-09-02 16:14:44,663 WARNING database DDL Query made to DB:
+ALTER TABLE `tabForm Tour` MODIFY `new_document_form` int(1) not null default 0, MODIFY `save_on_complete` int(1) not null default 0, MODIFY `first_document` int(1) not null default 0, MODIFY `ui_tour` int(1) not null default 0, MODIFY `include_name_field` int(1) not null default 0, MODIFY `track_steps` int(1) not null default 0, MODIFY `is_standard` int(1) not null default 0
+2024-09-02 16:14:44,756 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClient Script` MODIFY `enabled` int(1) not null default 0
+2024-09-02 16:14:44,863 WARNING database DDL Query made to DB:
+ALTER TABLE `tabServer Script` MODIFY `allow_guest` int(1) not null default 0, MODIFY `enable_rate_limit` int(1) not null default 0, MODIFY `disabled` int(1) not null default 0
+2024-09-02 16:14:45,245 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Type` MODIFY `is_standard` int(1) not null default 0
+2024-09-02 16:14:45,868 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `enabled` int(1) not null default 1, MODIFY `follow_liked_documents` int(1) not null default 0, MODIFY `follow_shared_documents` int(1) not null default 0, MODIFY `email_signature` text, MODIFY `send_me_a_copy` int(1) not null default 0, MODIFY `thread_notify` int(1) not null default 1, MODIFY `allowed_in_mentions` int(1) not null default 1, MODIFY `send_welcome_email` int(1) not null default 1, MODIFY `document_follow_notify` int(1) not null default 0, MODIFY `follow_assigned_documents` int(1) not null default 0, MODIFY `unsubscribed` int(1) not null default 0, MODIFY `follow_created_documents` int(1) not null default 0, MODIFY `follow_commented_documents` int(1) not null default 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` int(1) not null default 0, MODIFY `mute_sounds` int(1) not null default 0, MODIFY `logout_all_sessions` int(1) not null default 1
+2024-09-02 16:14:46,828 WARNING database DDL Query made to DB:
+ALTER TABLE `tabModule Def` MODIFY `custom` int(1) not null default 0
+2024-09-02 16:14:47,205 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTranslation` MODIFY `contributed` int(1) not null default 0
+2024-09-02 16:14:47,402 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Import` MODIFY `activate` int(1) not null default 0, MODIFY `force` int(1) not null default 0
+2024-09-02 16:14:47,491 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Naming Rule` MODIFY `disabled` int(1) not null default 0
+2024-09-02 16:14:47,665 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom DocPerm` MODIFY `submit` int(1) not null default 0, MODIFY `import` int(1) not null default 0, MODIFY `print` int(1) not null default 0, MODIFY `report` int(1) not null default 0, MODIFY `email` int(1) not null default 0, MODIFY `if_owner` int(1) not null default 0, MODIFY `cancel` int(1) not null default 0, MODIFY `amend` int(1) not null default 0, MODIFY `write` int(1) not null default 0, MODIFY `select` int(1) not null default 0, MODIFY `create` int(1) not null default 0, MODIFY `delete` int(1) not null default 0, MODIFY `share` int(1) not null default 0, MODIFY `export` int(1) not null default 1, MODIFY `read` int(1) not null default 1
+2024-09-02 16:14:47,948 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import` MODIFY `show_failed_logs` int(1) not null default 0, MODIFY `mute_emails` int(1) not null default 1, MODIFY `submit_after_import` int(1) not null default 0
+2024-09-02 16:14:48,028 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLanguage` MODIFY `enabled` int(1) not null default 1
+2024-09-02 16:14:48,247 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Release` MODIFY `publish` int(1) not null default 0
+2024-09-02 16:14:48,400 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocShare` MODIFY `share` int(1) not null default 0, MODIFY `everyone` int(1) not null default 0, MODIFY `submit` int(1) not null default 0, MODIFY `read` int(1) not null default 0, MODIFY `notify_by_email` int(1) not null default 1, MODIFY `write` int(1) not null default 0
+2024-09-02 16:14:48,513 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFile` MODIFY `uploaded_to_google_drive` int(1) not null default 0, MODIFY `uploaded_to_dropbox` int(1) not null default 0, MODIFY `is_private` int(1) not null default 0, MODIFY `is_home_folder` int(1) not null default 0, MODIFY `is_folder` int(1) not null default 0, MODIFY `is_attachments_folder` int(1) not null default 0
+2024-09-02 16:14:48,670 WARNING database DDL Query made to DB:
+ALTER TABLE `tabError Log` MODIFY `seen` int(1) not null default 0
+2024-09-02 16:14:48,855 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import Log` MODIFY `success` int(1) not null default 0
+2024-09-02 16:14:49,386 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSMS Parameter` MODIFY `header` int(1) not null default 0
+2024-09-02 16:14:49,500 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDeleted Document` MODIFY `restored` int(1) not null default 0
+2024-09-02 16:14:49,945 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Document Type` MODIFY `email` int(1) not null default 1, MODIFY `share` int(1) not null default 1, MODIFY `is_custom` int(1) not null default 0, MODIFY `read` int(1) not null default 1, MODIFY `create` int(1) not null default 0, MODIFY `print` int(1) not null default 1, MODIFY `submit` int(1) not null default 0, MODIFY `delete` int(1) not null default 0, MODIFY `write` int(1) not null default 0, MODIFY `amend` int(1) not null default 0, MODIFY `cancel` int(1) not null default 0
+2024-09-02 16:14:50,088 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReport Filter` MODIFY `mandatory` int(1) not null default 0, MODIFY `wildcard_filter` int(1) not null default 0
+2024-09-02 16:14:50,289 WARNING database DDL Query made to DB:
+ALTER TABLE `tabScheduled Job Type` MODIFY `cron_format` varchar(140), MODIFY `stopped` int(1) not null default 0, MODIFY `create_log` int(1) not null default 0
+2024-09-02 16:14:50,585 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCommunication` MODIFY `has_attachment` int(1) not null default 0, MODIFY `unread_notification_sent` int(1) not null default 0, MODIFY `read_by_recipient` int(1) not null default 0, MODIFY `read_receipt` int(1) not null default 0, MODIFY `seen` int(1) not null default 0
+2024-09-02 16:14:50,827 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNavbar Item` MODIFY `hidden` int(1) not null default 0, MODIFY `is_standard` int(1) not null default 0
+2024-09-02 16:14:50,902 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Email` MODIFY `used_oauth` int(1) not null default 0, MODIFY `awaiting_password` int(1) not null default 0, MODIFY `enable_outgoing` int(1) not null default 0
+2024-09-02 16:14:50,984 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Permission` MODIFY `hide_descendants` int(1) not null default 0, MODIFY `is_default` int(1) not null default 0, MODIFY `apply_to_all_doctypes` int(1) not null default 1
+2024-09-02 16:14:51,138 WARNING database DDL Query made to DB:
+ALTER TABLE `tabComment` MODIFY `published` int(1) not null default 0, MODIFY `seen` int(1) not null default 0
+2024-09-02 16:14:51,641 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Template Field` MODIFY `reqd` int(1) not null default 0
+2024-09-02 16:14:51,742 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlog Post` MODIFY `disable_comments` int(1) not null default 0, MODIFY `hide_cta` int(1) not null default 0, MODIFY `published` int(1) not null default 0, MODIFY `disable_likes` int(1) not null default 0, MODIFY `email_sent` int(1) not null default 0, MODIFY `featured` int(1) not null default 0, MODIFY `enable_email_notification` int(1) not null default 1
+2024-09-02 16:14:51,830 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlogger` MODIFY `disabled` int(1) not null default 0
+2024-09-02 16:14:52,133 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Page Block` MODIFY `add_top_padding` int(1) not null default 1, MODIFY `add_container` int(1) not null default 1, MODIFY `add_border_at_bottom` int(1) not null default 0, MODIFY `add_shade` int(1) not null default 0, MODIFY `hide_block` int(1) not null default 0, MODIFY `add_background_image` int(1) not null default 0, MODIFY `add_bottom_padding` int(1) not null default 1, MODIFY `add_border_at_top` int(1) not null default 0
+2024-09-02 16:14:52,326 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPersonal Data Deletion Step` MODIFY `partial` int(1) not null default 0
+2024-09-02 16:14:52,400 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Category` MODIFY `published` int(1) not null default 0
+2024-09-02 16:14:52,918 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Article` MODIFY `published` int(1) not null default 0
+2024-09-02 16:14:53,356 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTop Bar Item` MODIFY `right` int(1) not null default 1, MODIFY `open_in_new_tab` int(1) not null default 0
+2024-09-02 16:14:53,527 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlog Category` MODIFY `published` int(1) not null default 1
+2024-09-02 16:14:53,791 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow Transition` MODIFY `allow_self_approval` int(1) not null default 1
+2024-09-02 16:14:54,117 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow` MODIFY `override_status` int(1) not null default 0, MODIFY `send_email_alert` int(1) not null default 0, MODIFY `workflow_data` json, MODIFY `is_active` int(1) not null default 0
+2024-09-02 16:14:54,204 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow Document State` MODIFY `avoid_status_override` int(1) not null default 0, MODIFY `is_optional_state` int(1) not null default 0
+2024-09-02 16:14:54,285 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Group` MODIFY `add_query_parameters` int(1) not null default 0
+2024-09-02 16:14:54,434 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Account` MODIFY `track_email_status` int(1) not null default 1, MODIFY `default_incoming` int(1) not null default 0, MODIFY `notify_if_unreplied` int(1) not null default 0, MODIFY `enable_incoming` int(1) not null default 0, MODIFY `use_imap` int(1) not null default 0, MODIFY `login_id_is_different` int(1) not null default 0, MODIFY `default_outgoing` int(1) not null default 0, MODIFY `enable_auto_reply` int(1) not null default 0, MODIFY `no_smtp_authentication` int(1) not null default 0, MODIFY `use_ssl_for_outgoing` int(1) not null default 0, MODIFY `send_unsubscribe_message` int(1) not null default 1, MODIFY `add_signature` int(1) not null default 0, MODIFY `always_use_account_name_as_sender_name` int(1) not null default 0, MODIFY `enable_automatic_linking` int(1) not null default 0, MODIFY `enable_outgoing` int(1) not null default 0, MODIFY `use_ssl` int(1) not null default 0, MODIFY `use_starttls` int(1) not null default 0, MODIFY `use_tls` int(1) not null default 0, MODIFY `awaiting_password` int(1) not null default 0, MODIFY `append_emails_to_sent_folder` int(1) not null default 0, MODIFY `ascii_encode_password` int(1) not null default 0, MODIFY `create_contact` int(1) not null default 1, MODIFY `always_use_account_email_id_as_sender` int(1) not null default 0
+2024-09-02 16:14:54,609 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNewsletter` MODIFY `schedule_sending` int(1) not null default 0, MODIFY `published` int(1) not null default 0, MODIFY `email_sent` int(1) not null default 0, MODIFY `send_unsubscribe_link` int(1) not null default 1, MODIFY `send_webview_link` int(1) not null default 0
+2024-09-02 16:14:54,700 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Domain` MODIFY `use_ssl` int(1) not null default 0, MODIFY `use_imap` int(1) not null default 0, MODIFY `use_tls` int(1) not null default 0, MODIFY `use_ssl_for_outgoing` int(1) not null default 0, MODIFY `use_starttls` int(1) not null default 0, MODIFY `append_emails_to_sent_folder` int(1) not null default 0
+2024-09-02 16:14:54,864 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Queue` MODIFY `add_unsubscribe_link` int(1) not null default 1
+2024-09-02 16:14:54,954 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Unsubscribe` MODIFY `global_unsubscribe` int(1) not null default 0
+2024-09-02 16:14:55,162 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Template` MODIFY `use_html` int(1) not null default 0
+2024-09-02 16:14:55,249 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Rule` MODIFY `is_spam` int(1) not null default 0
+2024-09-02 16:14:55,366 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuto Email Report` MODIFY `enabled` int(1) not null default 1, MODIFY `send_if_data` int(1) not null default 1, MODIFY `use_first_day_of_period` int(1) not null default 0
+2024-09-02 16:14:55,510 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Group Member` MODIFY `unsubscribed` int(1) not null default 0
+2024-09-02 16:14:55,711 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Flag Queue` MODIFY `is_completed` int(1) not null default 0
+2024-09-02 16:14:55,980 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomize Form Field` MODIFY `print_hide` int(1) not null default 0, MODIFY `unique` int(1) not null default 0, MODIFY `hide_border` int(1) not null default 0, MODIFY `translatable` int(1) not null default 1, MODIFY `allow_bulk_edit` int(1) not null default 0, MODIFY `ignore_xss_filter` int(1) not null default 0, MODIFY `in_preview` int(1) not null default 0, MODIFY `hide_seconds` int(1) not null default 0, MODIFY `hide_days` int(1) not null default 0, MODIFY `in_global_search` int(1) not null default 0, MODIFY `is_virtual` int(1) not null default 0, MODIFY `remember_last_selected_value` int(1) not null default 0, MODIFY `in_list_view` int(1) not null default 0, MODIFY `allow_on_submit` int(1) not null default 0, MODIFY `in_filter` int(1) not null default 0, MODIFY `ignore_user_permissions` int(1) not null default 0, MODIFY `in_standard_filter` int(1) not null default 0, MODIFY `fetch_if_empty` int(1) not null default 0, MODIFY `read_only` int(1) not null default 0, MODIFY `is_custom_field` int(1) not null default 0, MODIFY `allow_in_quick_entry` int(1) not null default 0, MODIFY `hidden` int(1) not null default 0, MODIFY `report_hide` int(1) not null default 0, MODIFY `no_copy` int(1) not null default 0, MODIFY `show_dashboard` int(1) not null default 0, MODIFY `print_hide_if_no_value` int(1) not null default 0, MODIFY `non_negative` int(1) not null default 0, MODIFY `is_system_generated` int(1) not null default 0, MODIFY `collapsible` int(1) not null default 0, MODIFY `reqd` int(1) not null default 0, MODIFY `bold` int(1) not null default 0, MODIFY `sort_options` int(1) not null default 0, MODIFY `link_filters` json
+2024-09-02 16:14:56,194 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCurrency` MODIFY `enabled` int(1) not null default 0, MODIFY `smallest_currency_fraction_value` decimal(21,9) not null default 0, MODIFY `symbol_on_right` int(1) not null default 0
+2024-09-02 16:14:56,354 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNote` MODIFY `public` int(1) not null default 0, MODIFY `notify_on_every_login` int(1) not null default 0, MODIFY `notify_on_login` int(1) not null default 0
+2024-09-02 16:14:56,807 WARNING database DDL Query made to DB:
+ALTER TABLE `tabList View Settings` MODIFY `disable_comment_count` int(1) not null default 0, MODIFY `disable_sidebar_stats` int(1) not null default 0, MODIFY `disable_count` int(1) not null default 0, MODIFY `disable_auto_refresh` int(1) not null default 0
+2024-09-02 16:14:56,909 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDesktop Icon` MODIFY `blocked` int(1) not null default 0, MODIFY `force_show` int(1) not null default 0, MODIFY `standard` int(1) not null default 0, MODIFY `custom` int(1) not null default 0, MODIFY `hidden` int(1) not null default 0, MODIFY `reverse` int(1) not null default 0
+2024-09-02 16:14:57,069 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom HTML Block` MODIFY `private` int(1) not null default 0
+2024-09-02 16:14:57,192 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEvent` MODIFY `add_video_conferencing` int(1) not null default 0, MODIFY `thursday` int(1) not null default 0, MODIFY `friday` int(1) not null default 0, MODIFY `all_day` int(1) not null default 0, MODIFY `repeat_this_event` int(1) not null default 0, MODIFY `monday` int(1) not null default 0, MODIFY `sync_with_google_calendar` int(1) not null default 0, MODIFY `wednesday` int(1) not null default 0, MODIFY `send_reminder` int(1) not null default 1, MODIFY `pulled_from_google_calendar` int(1) not null default 0, MODIFY `saturday` int(1) not null default 0, MODIFY `sunday` int(1) not null default 0, MODIFY `tuesday` int(1) not null default 0
+2024-09-02 16:14:57,285 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Log` MODIFY `read` int(1) not null default 0
+2024-09-02 16:14:57,372 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Settings` MODIFY `energy_points_system_notifications` int(1) not null default 1, MODIFY `enable_email_mention` int(1) not null default 1, MODIFY `enabled` int(1) not null default 1, MODIFY `enable_email_share` int(1) not null default 1, MODIFY `enable_email_assignment` int(1) not null default 1, MODIFY `enable_email_energy_point` int(1) not null default 1, MODIFY `seen` int(1) not null default 0, MODIFY `enable_email_threads_on_assigned_document` int(1) not null default 1, MODIFY `enable_email_notifications` int(1) not null default 1, MODIFY `enable_email_event_reminders` int(1) not null default 1
+2024-09-02 16:14:57,469 WARNING database DDL Query made to DB:
+ALTER TABLE `tabForm Tour Step` MODIFY `hide_buttons` int(1) not null default 0, MODIFY `has_next_condition` int(1) not null default 0, MODIFY `modal_trigger` int(1) not null default 0, MODIFY `next_on_click` int(1) not null default 0, MODIFY `is_table_field` int(1) not null default 0, MODIFY `ui_tour` int(1) not null default 0, MODIFY `popover_element` int(1) not null default 0
+2024-09-02 16:14:57,690 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCalendar View` MODIFY `all_day` int(1) not null default 0
+2024-09-02 16:14:57,773 WARNING database DDL Query made to DB:
+ALTER TABLE `tabKanban Board` MODIFY `show_labels` int(1) not null default 0, MODIFY `private` int(1) not null default 0
+2024-09-02 16:14:57,913 WARNING database DDL Query made to DB:
+ALTER TABLE `tabConsole Log` MODIFY `committed` int(1) not null default 0
+2024-09-02 16:14:58,748 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Contacts` MODIFY `enable` int(1) not null default 0, MODIFY `push_to_google_contacts` int(1) not null default 0, MODIFY `pull_from_google_contacts` int(1) not null default 0
+2024-09-02 16:14:58,986 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIntegration Request` MODIFY `is_remote_request` int(1) not null default 0
+2024-09-02 16:14:59,076 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOAuth Client` MODIFY `skip_authorization` int(1) not null default 0
+2024-09-02 16:14:59,162 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Calendar` MODIFY `enable` int(1) not null default 1, MODIFY `push_to_google_calendar` int(1) not null default 1, MODIFY `pull_from_google_calendar` int(1) not null default 1
+2024-09-02 16:14:59,335 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSocial Login Key` MODIFY `custom_base_url` int(1) not null default 0, MODIFY `enable_social_login` int(1) not null default 0
+2024-09-02 16:14:59,444 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebhook` MODIFY `is_dynamic_url` int(1) not null default 0, MODIFY `enabled` int(1) not null default 1, MODIFY `enable_security` int(1) not null default 0
+2024-09-02 16:15:00,030 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSlack Webhook URL` MODIFY `show_document_link` int(1) not null default 1
+2024-09-02 16:15:00,550 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format Field Template` MODIFY `standard` int(1) not null default 0
+2024-09-02 16:15:00,619 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2024-09-02 16:15:00,801 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLetter Head` MODIFY `footer_image_width` decimal(21,9) not null default 0, MODIFY `image_height` decimal(21,9) not null default 0, MODIFY `image_width` decimal(21,9) not null default 0, MODIFY `is_default` int(1) not null default 0, MODIFY `footer_image_height` decimal(21,9) not null default 0, MODIFY `disabled` int(1) not null default 0
+2024-09-02 16:15:01,052 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContact` MODIFY `pulled_from_google_contacts` int(1) not null default 0, MODIFY `is_billing_contact` int(1) not null default 0, MODIFY `sync_with_google_contacts` int(1) not null default 0, MODIFY `is_primary_contact` int(1) not null default 0, MODIFY `unsubscribed` int(1) not null default 0
+2024-09-02 16:15:01,162 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContact Email` MODIFY `is_primary` int(1) not null default 0
+2024-09-02 16:15:01,257 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAddress` MODIFY `disabled` int(1) not null default 0, MODIFY `is_shipping_address` int(1) not null default 0, MODIFY `is_primary_address` int(1) not null default 0, MODIFY `is_your_company_address` int(1) not null default 0
+2024-09-02 16:15:01,350 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAddress Template` MODIFY `is_default` int(1) not null default 0
+2024-09-02 16:15:01,355 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAddress Template` ADD INDEX `country_index`(`country`)
+2024-09-02 16:15:01,427 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContact Phone` MODIFY `is_primary_phone` int(1) not null default 0, MODIFY `is_primary_mobile_no` int(1) not null default 0
+2024-09-02 16:15:01,592 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Rule` MODIFY `for_assigned_users` int(1) not null default 0, MODIFY `enabled` int(1) not null default 1, MODIFY `apply_only_once` int(1) not null default 0
+2024-09-02 16:15:01,676 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Log` MODIFY `reverted` int(1) not null default 0, MODIFY `seen` int(1) not null default 0
+2024-09-02 16:15:01,889 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAssignment Rule` MODIFY `disabled` int(1) not null default 0
+2024-09-02 16:15:02,033 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMilestone Tracker` MODIFY `disabled` int(1) not null default 0
+2024-09-02 16:15:02,117 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReminder` MODIFY `notified` int(1) not null default 0
+2024-09-02 16:15:02,229 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuto Repeat` MODIFY `submit_on_creation` int(1) not null default 0, MODIFY `repeat_on_last_day` int(1) not null default 0, MODIFY `disabled` int(1) not null default 0, MODIFY `notify_by_email` int(1) not null default 0
+2024-09-02 16:15:03,088 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2024-09-02 16:24:31,150 WARNING database DDL Query made to DB:
+DROP USER IF EXISTS '_8b3e45756aa1c354'@'localhost'
+2024-09-02 16:24:34,056 WARNING database DDL Query made to DB:
+DROP DATABASE IF EXISTS `_8b3e45756aa1c354`
+2024-09-02 16:24:34,056 WARNING database DDL Query made to DB:
+CREATE USER '_8b3e45756aa1c354'@'localhost' IDENTIFIED BY 'EPifAODda7nMFZc0'
+2024-09-02 16:24:34,059 WARNING database DDL Query made to DB:
+CREATE DATABASE `_8b3e45756aa1c354` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci
+2024-09-02 16:24:42,200 WARNING database DDL Query made to DB:
+create table if not exists `__Auth` (
+				`doctype` VARCHAR(140) NOT NULL,
+				`name` VARCHAR(255) NOT NULL,
+				`fieldname` VARCHAR(140) NOT NULL,
+				`password` TEXT NOT NULL,
+				`encrypted` INT(1) NOT NULL DEFAULT 0,
+				PRIMARY KEY (`doctype`, `name`, `fieldname`)
+			) ENGINE=InnoDB ROW_FORMAT=DYNAMIC CHARACTER SET=utf8mb4 COLLATE=utf8mb4_unicode_ci
+2024-09-02 16:24:42,204 WARNING database DDL Query made to DB:
+create table if not exists __UserSettings (
+			`user` VARCHAR(180) NOT NULL,
+			`doctype` VARCHAR(180) NOT NULL,
+			`data` TEXT,
+			UNIQUE(user, doctype)
+			) ENGINE=InnoDB DEFAULT CHARSET=utf8
+2024-09-02 16:24:54,968 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-09-02 16:24:55,336 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocField` ADD COLUMN `show_on_timeline` int(1) not null default 0
+2024-09-02 16:24:55,337 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocField` MODIFY `link_filters` json
+2024-09-02 16:24:56,366 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2024-09-02 16:24:56,949 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2024-09-02 16:46:33,974 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-09-02 16:46:34,595 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2024-09-02 16:46:35,264 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)
+2024-09-02 17:33:54,164 WARNING database DDL Query made to DB:
+alter table `tabDocType` add column if not exists migration_hash varchar(140)
+2024-09-02 17:33:54,739 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` DROP INDEX `print_heading`
+2024-09-02 17:33:55,351 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Heading` ADD UNIQUE INDEX IF NOT EXISTS print_heading (`print_heading`)

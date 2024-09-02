@@ -1,0 +1,1539 @@
+2024-09-02 15:09:50,424 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocType` MODIFY `allow_copy` tinyint NOT NULL DEFAULT 0, MODIFY `show_preview_popup` tinyint NOT NULL DEFAULT 0, MODIFY `track_changes` tinyint NOT NULL DEFAULT 0, MODIFY `sort_field` varchar(140) DEFAULT 'creation', MODIFY `issingle` tinyint NOT NULL DEFAULT 0, MODIFY `translated_doctype` tinyint NOT NULL DEFAULT 0, MODIFY `beta` tinyint NOT NULL DEFAULT 0, MODIFY `read_only` tinyint NOT NULL DEFAULT 0, MODIFY `track_seen` tinyint NOT NULL DEFAULT 0, MODIFY `quick_entry` tinyint NOT NULL DEFAULT 0, MODIFY `allow_rename` tinyint NOT NULL DEFAULT 1, MODIFY `custom` tinyint NOT NULL DEFAULT 0, MODIFY `allow_events_in_timeline` tinyint NOT NULL DEFAULT 0, MODIFY `has_web_view` tinyint NOT NULL DEFAULT 0, MODIFY `editable_grid` tinyint NOT NULL DEFAULT 1, MODIFY `track_views` tinyint NOT NULL DEFAULT 0, MODIFY `istable` tinyint NOT NULL DEFAULT 0, MODIFY `is_virtual` tinyint NOT NULL DEFAULT 0, MODIFY `is_calendar_and_gantt` tinyint NOT NULL DEFAULT 0, MODIFY `make_attachments_public` tinyint NOT NULL DEFAULT 0, MODIFY `allow_guest_to_view` tinyint NOT NULL DEFAULT 0, MODIFY `show_name_in_global_search` tinyint NOT NULL DEFAULT 0, MODIFY `index_web_pages_for_search` tinyint NOT NULL DEFAULT 1, MODIFY `email_append_to` tinyint NOT NULL DEFAULT 0, MODIFY `is_tree` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachments` int NOT NULL DEFAULT 0, MODIFY `show_title_field_in_link` tinyint NOT NULL DEFAULT 0, MODIFY `queue_in_background` tinyint NOT NULL DEFAULT 0, MODIFY `force_re_route_to_default_view` tinyint NOT NULL DEFAULT 0, MODIFY `allow_auto_repeat` tinyint NOT NULL DEFAULT 0, MODIFY `is_submittable` tinyint NOT NULL DEFAULT 0, MODIFY `allow_import` tinyint NOT NULL DEFAULT 0, MODIFY `hide_toolbar` tinyint NOT NULL DEFAULT 0, MODIFY `in_create` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:50,579 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom Field` MODIFY `hide_seconds` tinyint NOT NULL DEFAULT 0, MODIFY `print_hide_if_no_value` tinyint NOT NULL DEFAULT 0, MODIFY `is_virtual` tinyint NOT NULL DEFAULT 0, MODIFY `ignore_user_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `in_standard_filter` tinyint NOT NULL DEFAULT 0, MODIFY `no_copy` tinyint NOT NULL DEFAULT 0, MODIFY `non_negative` tinyint NOT NULL DEFAULT 0, MODIFY `unique` tinyint NOT NULL DEFAULT 0, MODIFY `translatable` tinyint NOT NULL DEFAULT 0, MODIFY `in_preview` tinyint NOT NULL DEFAULT 0, MODIFY `sort_options` tinyint NOT NULL DEFAULT 0, MODIFY `bold` tinyint NOT NULL DEFAULT 0, MODIFY `columns` int NOT NULL DEFAULT 0, MODIFY `is_system_generated` tinyint NOT NULL DEFAULT 0, MODIFY `report_hide` tinyint NOT NULL DEFAULT 0, MODIFY `allow_in_quick_entry` tinyint NOT NULL DEFAULT 0, MODIFY `permlevel` int NOT NULL DEFAULT 0, MODIFY `print_hide` tinyint NOT NULL DEFAULT 0, MODIFY `hide_border` tinyint NOT NULL DEFAULT 0, MODIFY `collapsible` tinyint NOT NULL DEFAULT 0, MODIFY `reqd` tinyint NOT NULL DEFAULT 0, MODIFY `show_dashboard` tinyint NOT NULL DEFAULT 0, MODIFY `allow_on_submit` tinyint NOT NULL DEFAULT 0, MODIFY `fetch_if_empty` tinyint NOT NULL DEFAULT 0, MODIFY `search_index` tinyint NOT NULL DEFAULT 0, MODIFY `length` int NOT NULL DEFAULT 0, MODIFY `in_list_view` tinyint NOT NULL DEFAULT 0, MODIFY `in_global_search` tinyint NOT NULL DEFAULT 0, MODIFY `hide_days` tinyint NOT NULL DEFAULT 0, MODIFY `hidden` tinyint NOT NULL DEFAULT 0, MODIFY `link_filters` json, MODIFY `ignore_xss_filter` tinyint NOT NULL DEFAULT 0, MODIFY `read_only` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:50,706 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProperty Setter` MODIFY `is_system_generated` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:50,882 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form` MODIFY `anonymous` tinyint NOT NULL DEFAULT 0, MODIFY `allow_incomplete` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `allow_multiple` tinyint NOT NULL DEFAULT 0, MODIFY `apply_document_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `show_attachments` tinyint NOT NULL DEFAULT 0, MODIFY `allow_delete` tinyint NOT NULL DEFAULT 0, MODIFY `max_attachment_size` int NOT NULL DEFAULT 0, MODIFY `show_list` tinyint NOT NULL DEFAULT 0, MODIFY `login_required` tinyint NOT NULL DEFAULT 0, MODIFY `condition_json` json, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `allow_print` tinyint NOT NULL DEFAULT 0, MODIFY `allow_comments` tinyint NOT NULL DEFAULT 0, MODIFY `allow_edit` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:50,962 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Template` MODIFY `standard` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:51,064 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Form Field` MODIFY `show_in_filter` tinyint NOT NULL DEFAULT 0, MODIFY `max_value` int NOT NULL DEFAULT 0, MODIFY `reqd` tinyint NOT NULL DEFAULT 0, MODIFY `max_length` int NOT NULL DEFAULT 0, MODIFY `read_only` tinyint NOT NULL DEFAULT 0, MODIFY `hidden` tinyint NOT NULL DEFAULT 0, MODIFY `allow_read_on_all_link_options` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:51,139 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPortal Menu Item` MODIFY `enabled` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:51,248 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNumber Card` MODIFY `is_public` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `show_percentage_stats` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:09:51,390 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Chart` MODIFY `number_of_groups` int NOT NULL DEFAULT 0, MODIFY `is_public` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `timeseries` tinyint NOT NULL DEFAULT 0, MODIFY `use_report_chart` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:51,480 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard` MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `is_default` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:51,660 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOnboarding Step` MODIFY `validate_action` tinyint NOT NULL DEFAULT 1, MODIFY `show_full_form` tinyint NOT NULL DEFAULT 0, MODIFY `is_complete` tinyint NOT NULL DEFAULT 0, MODIFY `show_form_tour` tinyint NOT NULL DEFAULT 0, MODIFY `is_single` tinyint NOT NULL DEFAULT 0, MODIFY `is_skipped` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:51,804 WARNING database DDL Query made to DB:
+ALTER TABLE `tabModule Onboarding` MODIFY `is_complete` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:51,886 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkspace Link` ADD COLUMN `report_ref_doctype` varchar(140)
+2024-09-02 15:09:51,915 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkspace Link` MODIFY `is_query_report` tinyint NOT NULL DEFAULT 0, MODIFY `onboard` tinyint NOT NULL DEFAULT 0, MODIFY `hidden` tinyint NOT NULL DEFAULT 0, MODIFY `link_count` int NOT NULL DEFAULT 0
+2024-09-02 15:09:52,346 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkspace` MODIFY `sequence_id` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_hidden` tinyint NOT NULL DEFAULT 0, MODIFY `public` tinyint NOT NULL DEFAULT 0, MODIFY `hide_custom` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:52,442 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPage` MODIFY `system_page` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:52,531 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReport` ADD COLUMN `timeout` int NOT NULL DEFAULT 0
+2024-09-02 15:09:52,552 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReport` MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `prepared_report` tinyint NOT NULL DEFAULT 0, MODIFY `add_total_row` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:52,643 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Chart Source` MODIFY `timeseries` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:52,783 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format` MODIFY `font_size` int NOT NULL DEFAULT 14, MODIFY `custom_format` tinyint NOT NULL DEFAULT 0, MODIFY `show_section_headings` tinyint NOT NULL DEFAULT 0, MODIFY `absolute_value` tinyint NOT NULL DEFAULT 0, MODIFY `margin_bottom` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `margin_right` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `line_breaks` tinyint NOT NULL DEFAULT 0, MODIFY `print_format_builder` tinyint NOT NULL DEFAULT 0, MODIFY `margin_left` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `raw_printing` tinyint NOT NULL DEFAULT 0, MODIFY `align_labels_right` tinyint NOT NULL DEFAULT 0, MODIFY `margin_top` decimal(21,9) NOT NULL DEFAULT 15.0, MODIFY `print_format_builder_beta` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:52,907 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Page` MODIFY `full_width` tinyint NOT NULL DEFAULT 1, MODIFY `insert_style` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 1, MODIFY `dynamic_route` tinyint NOT NULL DEFAULT 0, MODIFY `idx` int NOT NULL DEFAULT 0, MODIFY `show_title` tinyint NOT NULL DEFAULT 0, MODIFY `dynamic_template` tinyint NOT NULL DEFAULT 0, MODIFY `show_sidebar` tinyint NOT NULL DEFAULT 0, MODIFY `enable_comments` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:53,006 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebsite Theme` MODIFY `button_shadows` tinyint NOT NULL DEFAULT 0, MODIFY `button_gradients` tinyint NOT NULL DEFAULT 0, MODIFY `button_rounded_corners` tinyint NOT NULL DEFAULT 1, MODIFY `custom` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:09:53,124 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification` MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `attach_print` tinyint NOT NULL DEFAULT 0, MODIFY `days_in_advance` int NOT NULL DEFAULT 0, MODIFY `send_system_notification` tinyint NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_to_all_assignees` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:53,202 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Style` MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `standard` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:53,307 WARNING database DDL Query made to DB:
+ALTER TABLE `tabForm Tour` MODIFY `track_steps` tinyint NOT NULL DEFAULT 0, MODIFY `save_on_complete` tinyint NOT NULL DEFAULT 0, MODIFY `ui_tour` tinyint NOT NULL DEFAULT 0, MODIFY `include_name_field` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0, MODIFY `new_document_form` tinyint NOT NULL DEFAULT 0, MODIFY `first_document` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:53,395 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClient Script` MODIFY `enabled` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:53,496 WARNING database DDL Query made to DB:
+ALTER TABLE `tabServer Script` MODIFY `allow_guest` tinyint NOT NULL DEFAULT 0, MODIFY `rate_limit_seconds` int NOT NULL DEFAULT 86400, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `enable_rate_limit` tinyint NOT NULL DEFAULT 0, MODIFY `rate_limit_count` int NOT NULL DEFAULT 5
+2024-09-02 15:09:53,917 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Type` MODIFY `is_standard` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:54,149 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLogs To Clear` MODIFY `days` int NOT NULL DEFAULT 30
+2024-09-02 15:09:54,380 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` ADD COLUMN `code_editor_type` varchar(140) DEFAULT 'vscode'
+2024-09-02 15:09:54,396 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` MODIFY `logout_all_sessions` tinyint NOT NULL DEFAULT 1, MODIFY `follow_commented_documents` tinyint NOT NULL DEFAULT 0, MODIFY `bypass_restrict_ip_check_if_2fa_enabled` tinyint NOT NULL DEFAULT 0, MODIFY `send_me_a_copy` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `thread_notify` tinyint NOT NULL DEFAULT 1, MODIFY `login_after` int NOT NULL DEFAULT 0, MODIFY `document_follow_notify` tinyint NOT NULL DEFAULT 0, MODIFY `follow_assigned_documents` tinyint NOT NULL DEFAULT 0, MODIFY `login_before` int NOT NULL DEFAULT 0, MODIFY `follow_shared_documents` tinyint NOT NULL DEFAULT 0, MODIFY `send_welcome_email` tinyint NOT NULL DEFAULT 1, MODIFY `simultaneous_sessions` int NOT NULL DEFAULT 2, MODIFY `follow_created_documents` tinyint NOT NULL DEFAULT 0, MODIFY `email_signature` longtext, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `follow_liked_documents` tinyint NOT NULL DEFAULT 0, MODIFY `mute_sounds` tinyint NOT NULL DEFAULT 0, MODIFY `allowed_in_mentions` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:09:54,983 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSMS Log` MODIFY `no_of_requested_sms` int NOT NULL DEFAULT 0, MODIFY `no_of_sent_sms` int NOT NULL DEFAULT 0
+2024-09-02 15:09:55,065 WARNING database DDL Query made to DB:
+ALTER TABLE `tabModule Def` MODIFY `custom` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:55,451 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTranslation` MODIFY `contributed` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:55,644 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Import` MODIFY `force` tinyint NOT NULL DEFAULT 0, MODIFY `activate` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:55,735 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Naming Rule` MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `prefix_digits` int NOT NULL DEFAULT 5, MODIFY `counter` int NOT NULL DEFAULT 0, MODIFY `priority` int NOT NULL DEFAULT 0
+2024-09-02 15:09:55,900 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom DocPerm` MODIFY `if_owner` tinyint NOT NULL DEFAULT 0, MODIFY `create` tinyint NOT NULL DEFAULT 0, MODIFY `cancel` tinyint NOT NULL DEFAULT 0, MODIFY `export` tinyint NOT NULL DEFAULT 1, MODIFY `email` tinyint NOT NULL DEFAULT 0, MODIFY `select` tinyint NOT NULL DEFAULT 0, MODIFY `read` tinyint NOT NULL DEFAULT 1, MODIFY `permlevel` int NOT NULL DEFAULT 0, MODIFY `delete` tinyint NOT NULL DEFAULT 0, MODIFY `submit` tinyint NOT NULL DEFAULT 0, MODIFY `import` tinyint NOT NULL DEFAULT 0, MODIFY `share` tinyint NOT NULL DEFAULT 0, MODIFY `print` tinyint NOT NULL DEFAULT 0, MODIFY `report` tinyint NOT NULL DEFAULT 0, MODIFY `write` tinyint NOT NULL DEFAULT 0, MODIFY `amend` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:56,167 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import` ADD COLUMN `custom_delimiters` tinyint NOT NULL DEFAULT 0, ADD COLUMN `delimiter_options` varchar(140) DEFAULT ',;\\t|'
+2024-09-02 15:09:56,186 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import` MODIFY `submit_after_import` tinyint NOT NULL DEFAULT 0, MODIFY `show_failed_logs` tinyint NOT NULL DEFAULT 0, MODIFY `mute_emails` tinyint NOT NULL DEFAULT 1, MODIFY `payload_count` int NOT NULL DEFAULT 0
+2024-09-02 15:09:56,263 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLanguage` MODIFY `enabled` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:09:56,476 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Release` MODIFY `patch` int NOT NULL DEFAULT 0, MODIFY `publish` tinyint NOT NULL DEFAULT 0, MODIFY `minor` int NOT NULL DEFAULT 0, MODIFY `major` int NOT NULL DEFAULT 0
+2024-09-02 15:09:56,623 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocShare` MODIFY `share` tinyint NOT NULL DEFAULT 0, MODIFY `read` tinyint NOT NULL DEFAULT 0, MODIFY `submit` tinyint NOT NULL DEFAULT 0, MODIFY `everyone` tinyint NOT NULL DEFAULT 0, MODIFY `write` tinyint NOT NULL DEFAULT 0, MODIFY `notify_by_email` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:09:56,731 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFile` MODIFY `uploaded_to_dropbox` tinyint NOT NULL DEFAULT 0, MODIFY `is_folder` tinyint NOT NULL DEFAULT 0, MODIFY `uploaded_to_google_drive` tinyint NOT NULL DEFAULT 0, MODIFY `is_attachments_folder` tinyint NOT NULL DEFAULT 0, MODIFY `is_private` tinyint NOT NULL DEFAULT 0, MODIFY `is_home_folder` tinyint NOT NULL DEFAULT 0, MODIFY `file_size` bigint(20) NOT NULL DEFAULT 0
+2024-09-02 15:09:56,860 WARNING database DDL Query made to DB:
+ALTER TABLE `tabError Log` MODIFY `seen` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:56,986 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReport Column` MODIFY `width` int NOT NULL DEFAULT 0
+2024-09-02 15:09:57,053 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import Log` MODIFY `log_index` int NOT NULL DEFAULT 0, MODIFY `success` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:57,568 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSMS Parameter` MODIFY `header` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:57,686 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDeleted Document` MODIFY `restored` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:58,115 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Document Type` MODIFY `read` tinyint NOT NULL DEFAULT 1, MODIFY `cancel` tinyint NOT NULL DEFAULT 0, MODIFY `amend` tinyint NOT NULL DEFAULT 0, MODIFY `email` tinyint NOT NULL DEFAULT 1, MODIFY `create` tinyint NOT NULL DEFAULT 0, MODIFY `delete` tinyint NOT NULL DEFAULT 0, MODIFY `share` tinyint NOT NULL DEFAULT 1, MODIFY `print` tinyint NOT NULL DEFAULT 1, MODIFY `is_custom` tinyint NOT NULL DEFAULT 0, MODIFY `write` tinyint NOT NULL DEFAULT 0, MODIFY `submit` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:58,182 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSuccess Action` MODIFY `action_timeout` int NOT NULL DEFAULT 7
+2024-09-02 15:09:58,264 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReport Filter` MODIFY `mandatory` tinyint NOT NULL DEFAULT 0, MODIFY `wildcard_filter` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:58,478 WARNING database DDL Query made to DB:
+ALTER TABLE `tabScheduled Job Type` MODIFY `stopped` tinyint NOT NULL DEFAULT 0, MODIFY `cron_format` varchar(140) NOT NULL DEFAULT '', MODIFY `create_log` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:58,506 WARNING database DDL Query made to DB:
+alter table `tabScheduled Job Type`
+					add unique `unique_scheduled_job`(frequency, cron_format, method)
+2024-09-02 15:09:58,961 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCommunication` MODIFY `seen` tinyint NOT NULL DEFAULT 0, MODIFY `unread_notification_sent` tinyint NOT NULL DEFAULT 0, MODIFY `rating` int NOT NULL DEFAULT 0, MODIFY `read_receipt` tinyint NOT NULL DEFAULT 0, MODIFY `has_attachment` tinyint NOT NULL DEFAULT 0, MODIFY `read_by_recipient` tinyint NOT NULL DEFAULT 0, MODIFY `uid` int NOT NULL DEFAULT 0
+2024-09-02 15:09:59,152 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNavbar Item` MODIFY `hidden` tinyint NOT NULL DEFAULT 0, MODIFY `is_standard` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:59,230 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Email` MODIFY `awaiting_password` tinyint NOT NULL DEFAULT 0, MODIFY `used_oauth` tinyint NOT NULL DEFAULT 0, MODIFY `enable_outgoing` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:59,317 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Permission` MODIFY `is_default` tinyint NOT NULL DEFAULT 0, MODIFY `apply_to_all_doctypes` tinyint NOT NULL DEFAULT 1, MODIFY `hide_descendants` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:59,479 WARNING database DDL Query made to DB:
+ALTER TABLE `tabComment` MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `seen` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:09:59,542 WARNING database DDL Query made to DB:
+create table `tabUser Role Profile` (
+			name varchar(140) primary key,
+			creation datetime(6),
+			modified datetime(6),
+			modified_by varchar(140),
+			owner varchar(140),
+			docstatus tinyint not null default '0',
+			idx int not null default '0',
+			`role_profile` varchar(140),
+parent varchar(140),
+parentfield varchar(140),
+parenttype varchar(140),
+index parent(parent))
+			ENGINE=InnoDB
+			ROW_FORMAT=DYNAMIC
+			CHARACTER SET=utf8mb4
+			COLLATE=utf8mb4_unicode_ci
+2024-09-02 15:10:00,324 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Template Field` MODIFY `reqd` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:00,430 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlog Post` MODIFY `disable_comments` tinyint NOT NULL DEFAULT 0, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `enable_email_notification` tinyint NOT NULL DEFAULT 1, MODIFY `featured` tinyint NOT NULL DEFAULT 0, MODIFY `read_time` int NOT NULL DEFAULT 0, MODIFY `hide_cta` tinyint NOT NULL DEFAULT 0, MODIFY `email_sent` tinyint NOT NULL DEFAULT 0, MODIFY `disable_likes` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:00,525 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlogger` MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:00,876 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Page Block` MODIFY `add_border_at_top` tinyint NOT NULL DEFAULT 0, MODIFY `add_background_image` tinyint NOT NULL DEFAULT 0, MODIFY `add_border_at_bottom` tinyint NOT NULL DEFAULT 0, MODIFY `add_shade` tinyint NOT NULL DEFAULT 0, MODIFY `add_top_padding` tinyint NOT NULL DEFAULT 1, MODIFY `add_bottom_padding` tinyint NOT NULL DEFAULT 1, MODIFY `hide_block` tinyint NOT NULL DEFAULT 0, MODIFY `add_container` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:01,114 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPersonal Data Deletion Step` MODIFY `partial` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:01,190 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Category` MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `help_articles` int NOT NULL DEFAULT 0
+2024-09-02 15:10:01,805 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHelp Article` MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `helpful` int NOT NULL DEFAULT 0, MODIFY `likes` int NOT NULL DEFAULT 0, MODIFY `not_helpful` int NOT NULL DEFAULT 0
+2024-09-02 15:10:02,383 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTop Bar Item` MODIFY `right` tinyint NOT NULL DEFAULT 1, MODIFY `open_in_new_tab` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:02,497 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Page View` ADD COLUMN `content` varchar(140)
+2024-09-02 15:10:02,607 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlog Category` MODIFY `published` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:02,927 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow Transition` MODIFY `allow_self_approval` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:03,335 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow` MODIFY `is_active` tinyint NOT NULL DEFAULT 0, MODIFY `override_status` tinyint NOT NULL DEFAULT 0, MODIFY `send_email_alert` tinyint NOT NULL DEFAULT 0, MODIFY `workflow_data` json
+2024-09-02 15:10:03,439 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow Document State` MODIFY `avoid_status_override` tinyint NOT NULL DEFAULT 0, MODIFY `is_optional_state` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:03,556 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Group` MODIFY `add_query_parameters` tinyint NOT NULL DEFAULT 0, MODIFY `total_subscribers` int NOT NULL DEFAULT 0
+2024-09-02 15:10:04,551 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Account` ADD COLUMN `frappe_mail_site` varchar(140) DEFAULT 'https://frappemail.com', ADD COLUMN `backend_app_flow` tinyint NOT NULL DEFAULT 0, ADD COLUMN `api_key` varchar(140), ADD COLUMN `api_secret` text, ADD COLUMN `last_synced_at` datetime(6), ADD COLUMN `validate_ssl_certificate` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:04,570 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Account` MODIFY `always_use_account_name_as_sender_name` tinyint NOT NULL DEFAULT 0, MODIFY `enable_incoming` tinyint NOT NULL DEFAULT 0, MODIFY `awaiting_password` tinyint NOT NULL DEFAULT 0, MODIFY `use_imap` tinyint NOT NULL DEFAULT 0, MODIFY `create_contact` tinyint NOT NULL DEFAULT 1, MODIFY `enable_automatic_linking` tinyint NOT NULL DEFAULT 0, MODIFY `no_failed` int NOT NULL DEFAULT 0, MODIFY `use_starttls` tinyint NOT NULL DEFAULT 0, MODIFY `no_smtp_authentication` tinyint NOT NULL DEFAULT 0, MODIFY `attachment_limit` int NOT NULL DEFAULT 0, MODIFY `track_email_status` tinyint NOT NULL DEFAULT 1, MODIFY `use_tls` tinyint NOT NULL DEFAULT 0, MODIFY `append_emails_to_sent_folder` tinyint NOT NULL DEFAULT 0, MODIFY `add_signature` tinyint NOT NULL DEFAULT 0, MODIFY `send_unsubscribe_message` tinyint NOT NULL DEFAULT 1, MODIFY `ascii_encode_password` tinyint NOT NULL DEFAULT 0, MODIFY `enable_outgoing` tinyint NOT NULL DEFAULT 0, MODIFY `enable_auto_reply` tinyint NOT NULL DEFAULT 0, MODIFY `notify_if_unreplied` tinyint NOT NULL DEFAULT 0, MODIFY `login_id_is_different` tinyint NOT NULL DEFAULT 0, MODIFY `always_use_account_email_id_as_sender` tinyint NOT NULL DEFAULT 0, MODIFY `use_ssl_for_outgoing` tinyint NOT NULL DEFAULT 0, MODIFY `use_ssl` tinyint NOT NULL DEFAULT 0, MODIFY `default_outgoing` tinyint NOT NULL DEFAULT 0, MODIFY `default_incoming` tinyint NOT NULL DEFAULT 0, MODIFY `unreplied_for_mins` int NOT NULL DEFAULT 30, MODIFY `uidnext` int NOT NULL DEFAULT 0
+2024-09-02 15:10:04,781 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNewsletter` MODIFY `send_webview_link` tinyint NOT NULL DEFAULT 0, MODIFY `total_views` int NOT NULL DEFAULT 0, MODIFY `scheduled_to_send` int NOT NULL DEFAULT 0, MODIFY `send_unsubscribe_link` tinyint NOT NULL DEFAULT 1, MODIFY `published` tinyint NOT NULL DEFAULT 0, MODIFY `email_sent` tinyint NOT NULL DEFAULT 0, MODIFY `schedule_sending` tinyint NOT NULL DEFAULT 0, MODIFY `total_recipients` int NOT NULL DEFAULT 0
+2024-09-02 15:10:04,875 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Domain` ADD COLUMN `validate_ssl_certificate` tinyint NOT NULL DEFAULT 1, ADD COLUMN `validate_ssl_certificate_for_outgoing` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:04,888 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Domain` MODIFY `use_starttls` tinyint NOT NULL DEFAULT 0, MODIFY `attachment_limit` int NOT NULL DEFAULT 0, MODIFY `append_emails_to_sent_folder` tinyint NOT NULL DEFAULT 0, MODIFY `use_tls` tinyint NOT NULL DEFAULT 0, MODIFY `use_imap` tinyint NOT NULL DEFAULT 0, MODIFY `use_ssl` tinyint NOT NULL DEFAULT 0, MODIFY `use_ssl_for_outgoing` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:05,066 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Queue` MODIFY `priority` int NOT NULL DEFAULT 1, MODIFY `retry` int NOT NULL DEFAULT 0, MODIFY `add_unsubscribe_link` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:05,164 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Unsubscribe` MODIFY `global_unsubscribe` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:05,399 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Template` MODIFY `use_html` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:05,475 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Rule` MODIFY `is_spam` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:05,583 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuto Email Report` MODIFY `use_first_day_of_period` tinyint NOT NULL DEFAULT 0, MODIFY `data_modified_till` int NOT NULL DEFAULT 0, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `send_if_data` tinyint NOT NULL DEFAULT 1, MODIFY `no_of_rows` int NOT NULL DEFAULT 100
+2024-09-02 15:10:05,723 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Group Member` MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:05,927 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Flag Queue` MODIFY `is_completed` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:06,203 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustomize Form Field` MODIFY `reqd` tinyint NOT NULL DEFAULT 0, MODIFY `no_copy` tinyint NOT NULL DEFAULT 0, MODIFY `hidden` tinyint NOT NULL DEFAULT 0, MODIFY `ignore_xss_filter` tinyint NOT NULL DEFAULT 0, MODIFY `is_virtual` tinyint NOT NULL DEFAULT 0, MODIFY `is_custom_field` tinyint NOT NULL DEFAULT 0, MODIFY `sort_options` tinyint NOT NULL DEFAULT 0, MODIFY `permlevel` int NOT NULL DEFAULT 0, MODIFY `in_preview` tinyint NOT NULL DEFAULT 0, MODIFY `length` int NOT NULL DEFAULT 0, MODIFY `show_dashboard` tinyint NOT NULL DEFAULT 0, MODIFY `fetch_if_empty` tinyint NOT NULL DEFAULT 0, MODIFY `print_hide` tinyint NOT NULL DEFAULT 0, MODIFY `collapsible` tinyint NOT NULL DEFAULT 0, MODIFY `in_filter` tinyint NOT NULL DEFAULT 0, MODIFY `unique` tinyint NOT NULL DEFAULT 0, MODIFY `link_filters` json, MODIFY `translatable` tinyint NOT NULL DEFAULT 1, MODIFY `hide_border` tinyint NOT NULL DEFAULT 0, MODIFY `print_hide_if_no_value` tinyint NOT NULL DEFAULT 0, MODIFY `in_standard_filter` tinyint NOT NULL DEFAULT 0, MODIFY `allow_on_submit` tinyint NOT NULL DEFAULT 0, MODIFY `allow_in_quick_entry` tinyint NOT NULL DEFAULT 0, MODIFY `hide_days` tinyint NOT NULL DEFAULT 0, MODIFY `ignore_user_permissions` tinyint NOT NULL DEFAULT 0, MODIFY `is_system_generated` tinyint NOT NULL DEFAULT 0, MODIFY `allow_bulk_edit` tinyint NOT NULL DEFAULT 0, MODIFY `in_global_search` tinyint NOT NULL DEFAULT 0, MODIFY `report_hide` tinyint NOT NULL DEFAULT 0, MODIFY `bold` tinyint NOT NULL DEFAULT 0, MODIFY `read_only` tinyint NOT NULL DEFAULT 0, MODIFY `hide_seconds` tinyint NOT NULL DEFAULT 0, MODIFY `columns` int NOT NULL DEFAULT 0, MODIFY `remember_last_selected_value` tinyint NOT NULL DEFAULT 0, MODIFY `in_list_view` tinyint NOT NULL DEFAULT 0, MODIFY `non_negative` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:06,424 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCurrency` MODIFY `enabled` tinyint NOT NULL DEFAULT 0, MODIFY `fraction_units` int NOT NULL DEFAULT 0, MODIFY `smallest_currency_fraction_value` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `symbol_on_right` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:06,586 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNote` MODIFY `public` tinyint NOT NULL DEFAULT 0, MODIFY `notify_on_login` tinyint NOT NULL DEFAULT 0, MODIFY `notify_on_every_login` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:07,028 WARNING database DDL Query made to DB:
+ALTER TABLE `tabList View Settings` MODIFY `disable_count` tinyint NOT NULL DEFAULT 0, MODIFY `disable_sidebar_stats` tinyint NOT NULL DEFAULT 0, MODIFY `disable_auto_refresh` tinyint NOT NULL DEFAULT 0, MODIFY `disable_comment_count` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:07,127 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDesktop Icon` MODIFY `custom` tinyint NOT NULL DEFAULT 0, MODIFY `force_show` tinyint NOT NULL DEFAULT 0, MODIFY `blocked` tinyint NOT NULL DEFAULT 0, MODIFY `hidden` tinyint NOT NULL DEFAULT 0, MODIFY `idx` int NOT NULL DEFAULT 0, MODIFY `reverse` tinyint NOT NULL DEFAULT 0, MODIFY `standard` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:07,280 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom HTML Block` MODIFY `private` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:07,399 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEvent` MODIFY `sync_with_google_calendar` tinyint NOT NULL DEFAULT 0, MODIFY `all_day` tinyint NOT NULL DEFAULT 0, MODIFY `repeat_this_event` tinyint NOT NULL DEFAULT 0, MODIFY `pulled_from_google_calendar` tinyint NOT NULL DEFAULT 0, MODIFY `send_reminder` tinyint NOT NULL DEFAULT 1, MODIFY `thursday` tinyint NOT NULL DEFAULT 0, MODIFY `monday` tinyint NOT NULL DEFAULT 0, MODIFY `wednesday` tinyint NOT NULL DEFAULT 0, MODIFY `friday` tinyint NOT NULL DEFAULT 0, MODIFY `saturday` tinyint NOT NULL DEFAULT 0, MODIFY `sunday` tinyint NOT NULL DEFAULT 0, MODIFY `tuesday` tinyint NOT NULL DEFAULT 0, MODIFY `add_video_conferencing` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:07,488 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Log` MODIFY `read` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:07,586 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Settings` MODIFY `enable_email_mention` tinyint NOT NULL DEFAULT 1, MODIFY `enable_email_notifications` tinyint NOT NULL DEFAULT 1, MODIFY `enable_email_assignment` tinyint NOT NULL DEFAULT 1, MODIFY `enable_email_event_reminders` tinyint NOT NULL DEFAULT 1, MODIFY `enable_email_share` tinyint NOT NULL DEFAULT 1, MODIFY `seen` tinyint NOT NULL DEFAULT 0, MODIFY `energy_points_system_notifications` tinyint NOT NULL DEFAULT 1, MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `enable_email_energy_point` tinyint NOT NULL DEFAULT 1, MODIFY `enable_email_threads_on_assigned_document` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:07,712 WARNING database DDL Query made to DB:
+ALTER TABLE `tabForm Tour Step` MODIFY `is_table_field` tinyint NOT NULL DEFAULT 0, MODIFY `offset_x` int NOT NULL DEFAULT 0, MODIFY `next_on_click` tinyint NOT NULL DEFAULT 0, MODIFY `has_next_condition` tinyint NOT NULL DEFAULT 0, MODIFY `hide_buttons` tinyint NOT NULL DEFAULT 0, MODIFY `offset_y` int NOT NULL DEFAULT 0, MODIFY `modal_trigger` tinyint NOT NULL DEFAULT 0, MODIFY `ui_tour` tinyint NOT NULL DEFAULT 0, MODIFY `popover_element` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:07,940 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCalendar View` MODIFY `all_day` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:08,030 WARNING database DDL Query made to DB:
+ALTER TABLE `tabKanban Board` MODIFY `show_labels` tinyint NOT NULL DEFAULT 0, MODIFY `private` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:08,167 WARNING database DDL Query made to DB:
+ALTER TABLE `tabConsole Log` MODIFY `committed` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:08,971 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Contacts` MODIFY `push_to_google_contacts` tinyint NOT NULL DEFAULT 0, MODIFY `enable` tinyint NOT NULL DEFAULT 0, MODIFY `pull_from_google_contacts` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:09,187 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIntegration Request` MODIFY `is_remote_request` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:09,282 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOAuth Client` MODIFY `skip_authorization` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:09,370 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Calendar` MODIFY `enable` tinyint NOT NULL DEFAULT 1, MODIFY `push_to_google_calendar` tinyint NOT NULL DEFAULT 1, MODIFY `pull_from_google_calendar` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:09,562 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSocial Login Key` MODIFY `enable_social_login` tinyint NOT NULL DEFAULT 0, MODIFY `custom_base_url` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:09,663 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebhook` MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `timeout` int NOT NULL DEFAULT 5, MODIFY `enable_security` tinyint NOT NULL DEFAULT 0, MODIFY `is_dynamic_url` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:10,007 WARNING database DDL Query made to DB:
+ALTER TABLE `tabToken Cache` MODIFY `expires_in` int NOT NULL DEFAULT 0
+2024-09-02 15:10:10,299 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSlack Webhook URL` MODIFY `show_document_link` tinyint NOT NULL DEFAULT 1
+2024-09-02 15:10:10,380 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOAuth Bearer Token` MODIFY `expires_in` int NOT NULL DEFAULT 0
+2024-09-02 15:10:10,920 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format Field Template` MODIFY `standard` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:11,236 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLetter Head` MODIFY `image_width` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `image_height` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `is_default` tinyint NOT NULL DEFAULT 0, MODIFY `footer_image_width` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `footer_image_height` decimal(21,9) NOT NULL DEFAULT 0.0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:11,303 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNetwork Printer Settings` MODIFY `port` int NOT NULL DEFAULT 631
+2024-09-02 15:10:11,548 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContact` MODIFY `is_primary_contact` tinyint NOT NULL DEFAULT 0, MODIFY `is_billing_contact` tinyint NOT NULL DEFAULT 0, MODIFY `sync_with_google_contacts` tinyint NOT NULL DEFAULT 0, MODIFY `unsubscribed` tinyint NOT NULL DEFAULT 0, MODIFY `pulled_from_google_contacts` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:11,661 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContact Email` MODIFY `is_primary` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:11,762 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAddress` MODIFY `is_shipping_address` tinyint NOT NULL DEFAULT 0, MODIFY `is_your_company_address` tinyint NOT NULL DEFAULT 0, MODIFY `is_primary_address` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:11,854 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAddress Template` MODIFY `is_default` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:11,939 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContact Phone` MODIFY `is_primary_phone` tinyint NOT NULL DEFAULT 0, MODIFY `is_primary_mobile_no` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:12,104 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Rule` MODIFY `enabled` tinyint NOT NULL DEFAULT 1, MODIFY `for_assigned_users` tinyint NOT NULL DEFAULT 0, MODIFY `max_points` int NOT NULL DEFAULT 0, MODIFY `apply_only_once` tinyint NOT NULL DEFAULT 0, MODIFY `points` int NOT NULL DEFAULT 0
+2024-09-02 15:10:12,195 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Log` MODIFY `points` int NOT NULL DEFAULT 0, MODIFY `reverted` tinyint NOT NULL DEFAULT 0, MODIFY `seen` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:12,261 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReview Level` MODIFY `review_points` int NOT NULL DEFAULT 0
+2024-09-02 15:10:12,414 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAssignment Rule` MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `priority` int NOT NULL DEFAULT 0
+2024-09-02 15:10:12,571 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMilestone Tracker` MODIFY `disabled` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:12,678 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReminder` MODIFY `notified` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:12,779 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuto Repeat` MODIFY `repeat_on_day` int NOT NULL DEFAULT 0, MODIFY `repeat_on_last_day` tinyint NOT NULL DEFAULT 0, MODIFY `disabled` tinyint NOT NULL DEFAULT 0, MODIFY `submit_on_creation` tinyint NOT NULL DEFAULT 0, MODIFY `notify_by_email` tinyint NOT NULL DEFAULT 0
+2024-09-02 15:10:13,886 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSMS Log` MODIFY `no_of_requested_sms` int NOT NULL DEFAULT 0, MODIFY `no_of_sent_sms` int NOT NULL DEFAULT 0
+2024-09-02 15:10:14,530 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Withholding`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,534 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Withholding` DROP INDEX `modified`
+2024-09-02 15:10:14,540 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Account`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,545 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Account` DROP INDEX `modified`
+2024-09-02 15:10:14,550 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Form Script`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,554 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Form Script` DROP INDEX `modified`
+2024-09-02 15:10:14,559 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLedger Health`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,564 WARNING database DDL Query made to DB:
+ALTER TABLE `tabScheduled Job Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,568 WARNING database DDL Query made to DB:
+ALTER TABLE `tabScheduled Job Type` DROP INDEX `modified`
+2024-09-02 15:10:14,574 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom Field`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,576 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom Field` DROP INDEX `modified`
+2024-09-02 15:10:14,582 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow Action`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,586 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkflow Action` DROP INDEX `modified`
+2024-09-02 15:10:14,592 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Shift Factor`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,599 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Shift Allocation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,605 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Offer Term Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,610 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Offer Term Template` DROP INDEX `modified`
+2024-09-02 15:10:14,616 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Ticket`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,621 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPlant Floor`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,628 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBisect Nodes`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,637 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProcess Subscription`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,651 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Notification`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,670 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Action`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,676 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPWA Notification`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,682 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPWA Notification` DROP INDEX `modified`
+2024-09-02 15:10:14,688 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubcontracting BOM`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,696 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Service Level Agreement`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,703 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUnreconcile Payment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,710 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSerial and Batch Bundle`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,720 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Ticket Feedback Option`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,725 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlog Post`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,728 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlog Post` DROP INDEX `modified`
+2024-09-02 15:10:14,735 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle Service Item`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,739 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVehicle Service Item` DROP INDEX `modified`
+2024-09-02 15:10:14,745 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Activity`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,752 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBOM Creator`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,759 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRepost Accounting Ledger`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,766 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Escalation Rule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,772 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStock Reservation Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,780 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWarehouse`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,786 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom HTML Block`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,788 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom HTML Block` DROP INDEX `modified`
+2024-09-02 15:10:14,795 WARNING database DDL Query made to DB:
+ALTER TABLE `tabClosing Stock Balance`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,801 WARNING database DDL Query made to DB:
+ALTER TABLE `tabChangelog Feed`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,804 WARNING database DDL Query made to DB:
+ALTER TABLE `tabChangelog Feed` DROP INDEX `modified`
+2024-09-02 15:10:14,812 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProcess Payment Reconciliation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,818 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMarketing Campaign`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,821 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMarketing Campaign` DROP INDEX `modified`
+2024-09-02 15:10:14,827 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Feedback Criteria`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,831 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Feedback Criteria` DROP INDEX `modified`
+2024-09-02 15:10:14,836 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProcess Payment Reconciliation Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,843 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReminder`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,847 WARNING database DDL Query made to DB:
+ALTER TABLE `tabReminder` DROP INDEX `modified`
+2024-09-02 15:10:14,854 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAccount Closing Balance`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,860 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Customer`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,866 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncoterm`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,870 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncoterm` DROP INDEX `modified`
+2024-09-02 15:10:14,876 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Preset Filter`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,883 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkstation Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,889 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Canned Response`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,895 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Depreciation Schedule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,903 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRepost Payment Ledger`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,909 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Article Feedback`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,916 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubmission Queue`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,921 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubmission Queue` DROP INDEX `modified`
+2024-09-02 15:10:14,926 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Performance Feedback`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,930 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Performance Feedback` DROP INDEX `modified`
+2024-09-02 15:10:14,938 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Requisition`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,942 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Requisition` DROP INDEX `modified`
+2024-09-02 15:10:14,950 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,954 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal` DROP INDEX `modified`
+2024-09-02 15:10:14,960 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Ticket Comment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,968 WARNING database DDL Query made to DB:
+ALTER TABLE `tabKRA`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,973 WARNING database DDL Query made to DB:
+ALTER TABLE `tabKRA` DROP INDEX `modified`
+2024-09-02 15:10:14,979 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoal`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:14,983 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoal` DROP INDEX `modified`
+2024-09-02 15:10:14,991 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Cycle`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,001 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppraisal Cycle` DROP INDEX `modified`
+2024-09-02 15:10:15,011 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInventory Dimension`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,020 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayment Ledger Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,029 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubcontracting Receipt`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,035 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Desk Account Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,043 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Portal Signup Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,055 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubcontracting Order`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,066 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIntegration Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,070 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIntegration Request` DROP INDEX `modified`
+2024-09-02 15:10:15,075 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Organization`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,084 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Ticket Activity`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,093 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBOM Update Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,099 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTelephony Call Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,106 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Ticket Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,114 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Agent`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,123 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Team`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,131 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCall Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,136 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCall Log` DROP INDEX `modified`
+2024-09-02 15:10:15,147 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,156 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Ticket Priority`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,163 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Article`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,170 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Ticket Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,180 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Article Category`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,192 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLead`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,200 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,206 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity` DROP INDEX `modified`
+2024-09-02 15:10:15,216 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Feedback`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,222 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Feedback` DROP INDEX `modified`
+2024-09-02 15:10:15,228 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJournal Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,240 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSales Invoice`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,249 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCompany`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,256 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTax Category`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,261 WARNING database DDL Query made to DB:
+ALTER TABLE `tabItem Tax Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,269 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,277 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Advance`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,281 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Advance` DROP INDEX `modified`
+2024-09-02 15:10:15,287 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Share Key`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,293 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Share Key` DROP INDEX `modified`
+2024-09-02 15:10:15,299 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCost Center Allocation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,308 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRepost Item Valuation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,316 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,319 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser` DROP INDEX `modified`
+2024-09-02 15:10:15,322 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,325 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import Log` DROP INDEX `modified`
+2024-09-02 15:10:15,331 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHD Service Holiday List`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,338 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLedger Merge`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,344 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExit Interview`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,348 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExit Interview` DROP INDEX `modified`
+2024-09-02 15:10:15,354 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBulk Transaction Log Detail`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,363 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCompetitor`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,369 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format Field Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,374 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Format Field Template` DROP INDEX `modified`
+2024-09-02 15:10:15,379 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNetwork Printer Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,383 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNetwork Printer Settings` DROP INDEX `modified`
+2024-09-02 15:10:15,388 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Import`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,392 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Import` DROP INDEX `modified`
+2024-09-02 15:10:15,398 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Release`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,401 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage Release` DROP INDEX `modified`
+2024-09-02 15:10:15,407 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Capitalization`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,414 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,417 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPackage` DROP INDEX `modified`
+2024-09-02 15:10:15,422 WARNING database DDL Query made to DB:
+ALTER TABLE `tabParty Specific Item`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,430 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProspect`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,437 WARNING database DDL Query made to DB:
+ALTER TABLE `tabParty Link`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,444 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDiscussion Reply`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,448 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDiscussion Reply` DROP INDEX `modified`
+2024-09-02 15:10:15,455 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDiscussion Topic`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,458 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDiscussion Topic` DROP INDEX `modified`
+2024-09-02 15:10:15,464 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSouth Africa VAT Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,471 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Statement`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,474 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFull and Final Statement` DROP INDEX `modified`
+2024-09-02 15:10:15,479 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebhook Request Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,483 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebhook Request Log` DROP INDEX `modified`
+2024-09-02 15:10:15,490 WARNING database DDL Query made to DB:
+ALTER TABLE `tabForm Tour`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,492 WARNING database DDL Query made to DB:
+ALTER TABLE `tabForm Tour` DROP INDEX `modified`
+2024-09-02 15:10:15,498 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Grievance`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,502 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Grievance` DROP INDEX `modified`
+2024-09-02 15:10:15,507 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGrievance Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,511 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGrievance Type` DROP INDEX `modified`
+2024-09-02 15:10:15,517 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Feedback`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,522 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Feedback` DROP INDEX `modified`
+2024-09-02 15:10:15,527 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Group`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,531 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Group` DROP INDEX `modified`
+2024-09-02 15:10:15,538 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,542 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview` DROP INDEX `modified`
+2024-09-02 15:10:15,548 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,552 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Type` DROP INDEX `modified`
+2024-09-02 15:10:15,559 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Round`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,563 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInterview Round` DROP INDEX `modified`
+2024-09-02 15:10:15,570 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTransaction Deletion Record`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,576 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Referral`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,581 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Referral` DROP INDEX `modified`
+2024-09-02 15:10:15,587 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Inspection Parameter Group`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,595 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,598 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Type` DROP INDEX `modified`
+2024-09-02 15:10:15,605 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Inspection Parameter`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,612 WARNING database DDL Query made to DB:
+ALTER TABLE `tabModule Profile`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,618 WARNING database DDL Query made to DB:
+ALTER TABLE `tabModule Profile` DROP INDEX `modified`
+2024-09-02 15:10:15,623 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVoice Call Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,635 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncoming Call Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,642 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocType Layout`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,647 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocType Layout` DROP INDEX `modified`
+2024-09-02 15:10:15,654 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPutaway Rule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,660 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAccounting Dimension Filter`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,666 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNon Conformance`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,674 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUAE VAT Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,678 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Naming Rule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,682 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Naming Rule` DROP INDEX `modified`
+2024-09-02 15:10:15,687 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy Assignment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,691 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy Assignment` DROP INDEX `modified`
+2024-09-02 15:10:15,696 WARNING database DDL Query made to DB:
+ALTER TABLE `tabConsole Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,701 WARNING database DDL Query made to DB:
+ALTER TABLE `tabConsole Log` DROP INDEX `modified`
+2024-09-02 15:10:15,707 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity Rule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,711 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGratuity Rule` DROP INDEX `modified`
+2024-09-02 15:10:15,718 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShipment Parcel Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,725 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShipment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,734 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProcess Statement Of Accounts`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,741 WARNING database DDL Query made to DB:
+ALTER TABLE `tabModule Onboarding`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,745 WARNING database DDL Query made to DB:
+ALTER TABLE `tabModule Onboarding` DROP INDEX `modified`
+2024-09-02 15:10:15,751 WARNING database DDL Query made to DB:
+ALTER TABLE `tabColor`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,755 WARNING database DDL Query made to DB:
+ALTER TABLE `tabColor` DROP INDEX `modified`
+2024-09-02 15:10:15,760 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDowntime Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,769 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,773 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Template` DROP INDEX `modified`
+2024-09-02 15:10:15,778 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Page View`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,782 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWeb Page View` DROP INDEX `modified`
+2024-09-02 15:10:15,789 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNumber Card`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,792 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNumber Card` DROP INDEX `modified`
+2024-09-02 15:10:15,800 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOnboarding Step`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,803 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOnboarding Step` DROP INDEX `modified`
+2024-09-02 15:10:15,808 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJournal Entry Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,816 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,820 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Settings` DROP INDEX `modified`
+2024-09-02 15:10:15,826 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Other Income`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,831 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Other Income` DROP INDEX `modified`
+2024-09-02 15:10:15,837 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,841 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIncome Tax Slab` DROP INDEX `modified`
+2024-09-02 15:10:15,847 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLower Deduction Certificate`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,851 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLower Deduction Certificate` DROP INDEX `modified`
+2024-09-02 15:10:15,856 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPOS Opening Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,864 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPOS Invoice Merge Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,872 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPOS Invoice`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,878 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkspace`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,882 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWorkspace` DROP INDEX `modified`
+2024-09-02 15:10:15,888 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppointment Letter`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,891 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppointment Letter` DROP INDEX `modified`
+2024-09-02 15:10:15,897 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppointment Letter Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,900 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppointment Letter Template` DROP INDEX `modified`
+2024-09-02 15:10:15,906 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDunning Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,913 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProcess Deferred Accounting`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,920 WARNING database DDL Query made to DB:
+ALTER TABLE `tabList View Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,923 WARNING database DDL Query made to DB:
+ALTER TABLE `tabList View Settings` DROP INDEX `modified`
+2024-09-02 15:10:15,928 WARNING database DDL Query made to DB:
+ALTER TABLE `tabImport Supplier Invoice`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,935 WARNING database DDL Query made to DB:
+ALTER TABLE `tabServer Script`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,938 WARNING database DDL Query made to DB:
+ALTER TABLE `tabServer Script` DROP INDEX `modified`
+2024-09-02 15:10:15,945 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTag Link`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:15,950 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTag Link` DROP INDEX `modified`
+2024-09-02 15:10:16,012 WARNING database DDL Query made to DB:
+ALTER TABLE `tabScheduled Job Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,017 WARNING database DDL Query made to DB:
+ALTER TABLE `tabScheduled Job Log` DROP INDEX `modified`
+2024-09-02 15:10:16,023 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Settings`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,028 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Settings` DROP INDEX `modified`
+2024-09-02 15:10:16,034 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAppointment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,042 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,046 WARNING database DDL Query made to DB:
+ALTER TABLE `tabNotification Log` DROP INDEX `modified`
+2024-09-02 15:10:16,051 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,054 WARNING database DDL Query made to DB:
+ALTER TABLE `tabData Import` DROP INDEX `modified`
+2024-09-02 15:10:16,060 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBank Statement Import`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,068 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAccess Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,072 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAccess Log` DROP INDEX `modified`
+2024-09-02 15:10:16,078 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPick List`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,083 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Calendar`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,087 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Calendar` DROP INDEX `modified`
+2024-09-02 15:10:16,092 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDunning`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,099 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Campaign`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,105 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Contacts`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,108 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGoogle Contacts` DROP INDEX `modified`
+2024-09-02 15:10:16,114 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,118 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Checkin` DROP INDEX `modified`
+2024-09-02 15:10:16,124 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCommunication Medium`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,130 WARNING database DDL Query made to DB:
+ALTER TABLE `tabItem Manufacturer`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,138 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Feedback`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,145 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Feedback Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,152 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWarehouse Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,160 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIssue Priority`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,167 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Ledger Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,171 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Ledger Entry` DROP INDEX `modified`
+2024-09-02 15:10:16,177 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAccounting Dimension`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,184 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTask Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,191 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMilestone`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,196 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMilestone` DROP INDEX `modified`
+2024-09-02 15:10:16,201 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMilestone Tracker`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,204 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMilestone Tracker` DROP INDEX `modified`
+2024-09-02 15:10:16,212 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Skill Map`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,216 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Skill Map` DROP INDEX `modified`
+2024-09-02 15:10:16,223 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSkill`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,227 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSkill` DROP INDEX `modified`
+2024-09-02 15:10:16,234 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStock Entry Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,240 WARNING database DDL Query made to DB:
+ALTER TABLE `tabInvoice Discounting`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,247 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAssignment Rule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,251 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAssignment Rule` DROP INDEX `modified`
+2024-09-02 15:10:16,256 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProject Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,263 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebsite Route Meta`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,267 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebsite Route Meta` DROP INDEX `modified`
+2024-09-02 15:10:16,273 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPersonal Data Deletion Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,278 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPersonal Data Deletion Request` DROP INDEX `modified`
+2024-09-02 15:10:16,285 WARNING database DDL Query made to DB:
+ALTER TABLE `tabHomepage Section`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,292 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPromotional Scheme`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,301 WARNING database DDL Query made to DB:
+ALTER TABLE `tabComment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,305 WARNING database DDL Query made to DB:
+ALTER TABLE `tabComment` DROP INDEX `modified`
+2024-09-02 15:10:16,311 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Chart Source`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,315 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Chart Source` DROP INDEX `modified`
+2024-09-02 15:10:16,322 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTally Migration`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,328 WARNING database DDL Query made to DB:
+ALTER TABLE `tabToken Cache`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,331 WARNING database DDL Query made to DB:
+ALTER TABLE `tabToken Cache` DROP INDEX `modified`
+2024-09-02 15:10:16,336 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPersonal Data Download Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,340 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPersonal Data Download Request` DROP INDEX `modified`
+2024-09-02 15:10:16,347 WARNING database DDL Query made to DB:
+ALTER TABLE `tabConnected App`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,351 WARNING database DDL Query made to DB:
+ALTER TABLE `tabConnected App` DROP INDEX `modified`
+2024-09-02 15:10:16,357 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,360 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard` DROP INDEX `modified`
+2024-09-02 15:10:16,367 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Chart`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,372 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDashboard Chart` DROP INDEX `modified`
+2024-09-02 15:10:16,377 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Follow`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,382 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDocument Follow` DROP INDEX `modified`
+2024-09-02 15:10:16,387 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOpportunity Lost Reason`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,392 WARNING database DDL Query made to DB:
+ALTER TABLE `tabService Level Agreement`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,400 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Group`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,406 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBank Account Subtype`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,413 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBank Account Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,420 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBank Transaction`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,425 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBank Transaction` DROP INDEX `modified`
+2024-09-02 15:10:16,431 WARNING database DDL Query made to DB:
+ALTER TABLE `tabVideo`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,440 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Meeting`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,447 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Procedure`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,464 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRoute History`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,468 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRoute History` DROP INDEX `modified`
+2024-09-02 15:10:16,475 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Goal`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,482 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Review`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,490 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Action`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,500 WARNING database DDL Query made to DB:
+ALTER TABLE `tabMarket Segment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,512 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSales Stage`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,520 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Digest`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,527 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayment Order`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,534 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRouting`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,551 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Card`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,564 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrepared Report`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,570 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrepared Report` DROP INDEX `modified`
+2024-09-02 15:10:16,580 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,588 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Log` DROP INDEX `modified`
+2024-09-02 15:10:16,603 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Rule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,609 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEnergy Point Rule` DROP INDEX `modified`
+2024-09-02 15:10:16,621 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCashier Closing`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,636 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Applicant Source`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,643 WARNING database DDL Query made to DB:
+ALTER TABLE `tabJob Applicant Source` DROP INDEX `modified`
+2024-09-02 15:10:16,659 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSales Partner Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,672 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPOS Closing Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,684 WARNING database DDL Query made to DB:
+ALTER TABLE `tabView Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,692 WARNING database DDL Query made to DB:
+ALTER TABLE `tabView Log` DROP INDEX `modified`
+2024-09-02 15:10:16,703 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBlanket Order`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,714 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSlack Webhook URL`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,719 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSlack Webhook URL` DROP INDEX `modified`
+2024-09-02 15:10:16,727 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIdentification Document Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,732 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIdentification Document Type` DROP INDEX `modified`
+2024-09-02 15:10:16,738 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurpose of Travel`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,742 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPurpose of Travel` DROP INDEX `modified`
+2024-09-02 15:10:16,749 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTravel Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,754 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTravel Request` DROP INDEX `modified`
+2024-09-02 15:10:16,759 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRetention Bonus`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,763 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRetention Bonus` DROP INDEX `modified`
+2024-09-02 15:10:16,769 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Value Adjustment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,776 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAdditional Salary`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,780 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAdditional Salary` DROP INDEX `modified`
+2024-09-02 15:10:16,785 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Separation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,790 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Separation` DROP INDEX `modified`
+2024-09-02 15:10:16,795 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Sub Category`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,799 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Sub Category` DROP INDEX `modified`
+2024-09-02 15:10:16,804 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Separation Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,809 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Separation Template` DROP INDEX `modified`
+2024-09-02 15:10:16,816 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Onboarding Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,821 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Onboarding Template` DROP INDEX `modified`
+2024-09-02 15:10:16,827 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Onboarding`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,831 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Onboarding` DROP INDEX `modified`
+2024-09-02 15:10:16,836 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLocation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,845 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUOM Conversion Factor`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,852 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUOM Category`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,859 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,866 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSuccess Action`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,871 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSuccess Action` DROP INDEX `modified`
+2024-09-02 15:10:16,876 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAccounting Period`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,883 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTax Withholding Category`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,890 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Promotion`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,894 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Promotion` DROP INDEX `modified`
+2024-09-02 15:10:16,899 WARNING database DDL Query made to DB:
+ALTER TABLE `tabExchange Rate Revaluation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,907 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Transfer`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,912 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Transfer` DROP INDEX `modified`
+2024-09-02 15:10:16,919 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStaffing Plan`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,923 WARNING database DDL Query made to DB:
+ALTER TABLE `tabStaffing Plan` DROP INDEX `modified`
+2024-09-02 15:10:16,930 WARNING database DDL Query made to DB:
+ALTER TABLE `tabFinance Book`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,938 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Proof Submission` DROP INDEX `modified`
+2024-09-02 15:10:16,943 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Declaration` DROP INDEX `modified`
+2024-09-02 15:10:16,950 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Category`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,954 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Tax Exemption Category` DROP INDEX `modified`
+2024-09-02 15:10:16,959 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Claim`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,964 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Claim` DROP INDEX `modified`
+2024-09-02 15:10:16,972 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Structure Assignment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,977 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalary Structure Assignment` DROP INDEX `modified`
+2024-09-02 15:10:16,984 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:16,988 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Request` DROP INDEX `modified`
+2024-09-02 15:10:16,995 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Application`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,000 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Benefit Application` DROP INDEX `modified`
+2024-09-02 15:10:17,016 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Assignment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,020 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Assignment` DROP INDEX `modified`
+2024-09-02 15:10:17,027 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,030 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShift Type` DROP INDEX `modified`
+2024-09-02 15:10:17,036 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Grade`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,041 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Grade` DROP INDEX `modified`
+2024-09-02 15:10:17,047 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Incentive`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,051 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Incentive` DROP INDEX `modified`
+2024-09-02 15:10:17,057 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,061 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Policy` DROP INDEX `modified`
+2024-09-02 15:10:17,067 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAttendance Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,070 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAttendance Request` DROP INDEX `modified`
+2024-09-02 15:10:17,076 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Encashment`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,080 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Encashment` DROP INDEX `modified`
+2024-09-02 15:10:17,086 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Period`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,091 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLeave Period` DROP INDEX `modified`
+2024-09-02 15:10:17,096 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Period`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,101 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Period` DROP INDEX `modified`
+2024-09-02 15:10:17,107 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCompensatory Leave Request`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,112 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCompensatory Leave Request` DROP INDEX `modified`
+2024-09-02 15:10:17,119 WARNING database DDL Query made to DB:
+ALTER TABLE `tabContract`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,126 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBank`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,132 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuto Repeat`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,136 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAuto Repeat` DROP INDEX `modified`
+2024-09-02 15:10:17,141 WARNING database DDL Query made to DB:
+ALTER TABLE `tabItem Alternative`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,148 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubscription Plan`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,155 WARNING database DDL Query made to DB:
+ALTER TABLE `tabList Filter`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,159 WARNING database DDL Query made to DB:
+ALTER TABLE `tabList Filter` DROP INDEX `modified`
+2024-09-02 15:10:17,172 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDaily Work Summary Group`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,176 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDaily Work Summary Group` DROP INDEX `modified`
+2024-09-02 15:10:17,182 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTransaction Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,185 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTransaction Log` DROP INDEX `modified`
+2024-09-02 15:10:17,190 WARNING database DDL Query made to DB:
+ALTER TABLE `tabQuality Inspection Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,196 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLoyalty Program`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,202 WARNING database DDL Query made to DB:
+ALTER TABLE `tabLoyalty Point Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,209 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCoupon Code`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,215 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProject Update`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,222 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShare Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,228 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShare Transfer`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,234 WARNING database DDL Query made to DB:
+ALTER TABLE `tabShareholder`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,240 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSocial Login Key`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,244 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSocial Login Key` DROP INDEX `modified`
+2024-09-02 15:10:17,250 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProduction Plan`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,256 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Maintenance Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,262 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Entry`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,266 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayroll Entry` DROP INDEX `modified`
+2024-09-02 15:10:17,271 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCalendar View`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,275 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCalendar View` DROP INDEX `modified`
+2024-09-02 15:10:17,280 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Repair`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,286 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Maintenance Team`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,292 WARNING database DDL Query made to DB:
+ALTER TABLE `tabAsset Maintenance`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,298 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDriver`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,305 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDelivery Trip`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,311 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Program`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,314 WARNING database DDL Query made to DB:
+ALTER TABLE `tabTraining Program` DROP INDEX `modified`
+2024-09-02 15:10:17,320 WARNING database DDL Query made to DB:
+ALTER TABLE `tabOpportunity Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,326 WARNING database DDL Query made to DB:
+ALTER TABLE `tabIssue Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,333 WARNING database DDL Query made to DB:
+ALTER TABLE `tabActivity Log`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,337 WARNING database DDL Query made to DB:
+ALTER TABLE `tabActivity Log` DROP INDEX `modified`
+2024-09-02 15:10:17,342 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebhook`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,346 WARNING database DDL Query made to DB:
+ALTER TABLE `tabWebhook` DROP INDEX `modified`
+2024-09-02 15:10:17,351 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRole Profile`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,357 WARNING database DDL Query made to DB:
+ALTER TABLE `tabRole Profile` DROP INDEX `modified`
+2024-09-02 15:10:17,377 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Style`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,382 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPrint Style` DROP INDEX `modified`
+2024-09-02 15:10:17,386 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayment Terms Template`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,392 WARNING database DDL Query made to DB:
+ALTER TABLE `tabPayment Term`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,399 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSubscription`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,408 WARNING database DDL Query made to DB:
+ALTER TABLE `tabProject Type`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,415 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Permission`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,419 WARNING database DDL Query made to DB:
+ALTER TABLE `tabUser Permission` DROP INDEX `modified`
+2024-09-02 15:10:17,424 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSupplier Scorecard Period`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,431 WARNING database DDL Query made to DB:
+ALTER TABLE `tabBank Account`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,437 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSupplier Scorecard`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,445 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSupplier Scorecard Standing`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,454 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSupplier Scorecard Criteria`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,464 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSupplier Scorecard Variable`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,512 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDomain`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,515 WARNING database DDL Query made to DB:
+ALTER TABLE `tabDomain` DROP INDEX `modified`
+2024-09-02 15:10:17,523 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalutation`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,527 WARNING database DDL Query made to DB:
+ALTER TABLE `tabSalutation` DROP INDEX `modified`
+2024-09-02 15:10:17,534 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGender`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,538 WARNING database DDL Query made to DB:
+ALTER TABLE `tabGender` DROP INDEX `modified`
+2024-09-02 15:10:17,544 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Health Insurance`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,548 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmployee Health Insurance` DROP INDEX `modified`
+2024-09-02 15:10:17,555 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustoms Tariff Number`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,562 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Rule`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,566 WARNING database DDL Query made to DB:
+ALTER TABLE `tabEmail Rule` DROP INDEX `modified`
+2024-09-02 15:10:17,573 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom Role`
+				ADD INDEX `creation`(creation)
+2024-09-02 15:10:17,576 WARNING database DDL Query made to DB:
+ALTER TABLE `tabCustom Role` DROP INDEX `modified`

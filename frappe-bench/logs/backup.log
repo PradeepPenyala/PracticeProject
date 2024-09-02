@@ -1,0 +1,236 @@
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240822_120001-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-22 12:00:02.994866
+Config  : ./prop.com/private/backups/20240822_120001-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240822_120001-prop_com-database.sql.gz         930.2KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240822_180003-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-22 18:00:08.237325
+Config  : ./prop.com/private/backups/20240822_180003-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240822_180003-prop_com-database.sql.gz         989.1KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240823_120002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-23 12:00:05.937293
+Config  : ./prop.com/private/backups/20240823_120002-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240823_120002-prop_com-database.sql.gz         989.1KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240823_180002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-23 18:00:05.640679
+Config  : ./prop.com/private/backups/20240823_180002-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240823_180002-prop_com-database.sql.gz         1001.3KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240824_120006-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-24 12:00:13.630965
+Config  : ./prop.com/private/backups/20240824_120006-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240824_120006-prop_com-database.sql.gz         1006.6KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240824_180002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-24 18:00:05.251026
+Config  : ./prop.com/private/backups/20240824_180002-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240824_180002-prop_com-database.sql.gz         1012.8KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240825_120003-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-25 12:00:07.240730
+Config  : ./prop.com/private/backups/20240825_120003-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240825_120003-prop_com-database.sql.gz         1013.5KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240825_180002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-25 18:00:03.769412
+Config  : ./prop.com/private/backups/20240825_180002-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240825_180002-prop_com-database.sql.gz         1016.0KiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240826_120002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-26 12:00:04.260836
+Config  : ./prop.com/private/backups/20240826_120002-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240826_120002-prop_com-database.sql.gz         1.0MiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240826_180004-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-26 18:00:10.167803
+Config  : ./prop.com/private/backups/20240826_180004-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240826_180004-prop_com-database.sql.gz         1.0MiB
+Backup for Site prop.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240826_180010-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-26 18:00:11.376632
+Config  : ./propla.com/private/backups/20240826_180010-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240826_180010-propla_com-database.sql.gz         219.1KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240827_120002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-27 12:00:04.385090
+Config  : ./prop.com/private/backups/20240827_120002-prop_com-site_config_backup.json 158.0B
+Database: ./prop.com/private/backups/20240827_120002-prop_com-database.sql.gz         1.0MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240826_180010-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240826_180010-propla_com-database.sql.gz is recent
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240827_120004-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-27 12:00:05.049833
+Config  : ./propla.com/private/backups/20240827_120004-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240827_120004-propla_com-database.sql.gz         222.8KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240827_180003-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-27 18:00:05.727331
+Config  : ./prop.com/private/backups/20240827_180003-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240827_180003-prop_com-database.sql.gz         1.0MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240827_120004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240826_180010-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240827_120004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240826_180010-propla_com-database.sql.gz is recent
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240827_180005-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-27 18:00:06.798627
+Config  : ./propla.com/private/backups/20240827_180005-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240827_180005-propla_com-database.sql.gz         228.5KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240828_120002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-28 12:00:03.490217
+Config  : ./prop.com/private/backups/20240828_120002-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240828_120002-prop_com-database.sql.gz         1.0MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240827_120004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240827_180005-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240826_180010-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240827_180005-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240827_120004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240826_180010-propla_com-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240828_120003-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-28 12:00:03.977234
+Config  : ./propla.com/private/backups/20240828_120003-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240828_120003-propla_com-database.sql.gz         230.6KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240828_180002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-28 18:00:04.889407
+Config  : ./prop.com/private/backups/20240828_180002-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240828_180002-prop_com-database.sql.gz         5.4MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240827_120004-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240827_180005-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240827_180005-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240827_120004-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240828_120003-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240828_120003-propla_com-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240828_180004-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-28 18:00:05.281971
+Config  : ./propla.com/private/backups/20240828_180004-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240828_180004-propla_com-database.sql.gz         236.2KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240829_120002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-29 12:00:04.860886
+Config  : ./prop.com/private/backups/20240829_120002-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240829_120002-prop_com-database.sql.gz         5.5MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240828_180004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240827_180005-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240827_180005-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240828_120003-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240828_180004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240828_120003-propla_com-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240829_120004-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-29 12:00:05.358565
+Config  : ./propla.com/private/backups/20240829_120004-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240829_120004-propla_com-database.sql.gz         239.6KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240829_180002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-29 18:00:04.985487
+Config  : ./prop.com/private/backups/20240829_180002-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240829_180002-prop_com-database.sql.gz         5.5MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240828_180004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240829_120004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240828_180004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240829_120004-propla_com-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240829_180004-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-29 18:00:05.701917
+Config  : ./propla.com/private/backups/20240829_180004-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240829_180004-propla_com-database.sql.gz         245.2KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240830_120001-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-30 12:00:04.225995
+Config  : ./prop.com/private/backups/20240830_120001-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240830_120001-prop_com-database.sql.gz         5.5MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240829_180004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240828_180004-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240829_180004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240829_120004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240828_180004-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240829_120004-propla_com-site_config_backup.json is recent
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240830_120004-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-30 12:00:04.778896
+Config  : ./propla.com/private/backups/20240830_120004-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240830_120004-propla_com-database.sql.gz         248.2KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240830_180002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-30 18:00:04.142251
+Config  : ./prop.com/private/backups/20240830_180002-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240830_180002-prop_com-database.sql.gz         5.5MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240829_180004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240830_120004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240829_180004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240829_120004-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240829_120004-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240830_120004-propla_com-database.sql.gz is recent
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240830_180004-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-30 18:00:04.415723
+Config  : ./propla.com/private/backups/20240830_180004-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240830_180004-propla_com-database.sql.gz         251.3KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240831_120002-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-08-31 12:00:05.036671
+Config  : ./prop.com/private/backups/20240831_120002-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240831_120002-prop_com-database.sql.gz         5.6MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240829_180004-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240830_120004-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240830_180004-propla_com-database.sql.gz is recent
+File ./propla.com/private/backups/20240829_180004-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240830_180004-propla_com-site_config_backup.json is recent
+File ./propla.com/private/backups/20240830_120004-propla_com-database.sql.gz is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240831_120005-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-08-31 12:00:05.629375
+Config  : ./propla.com/private/backups/20240831_120005-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240831_120005-propla_com-database.sql.gz         251.3KiB
+Backup for Site propla.com has been successfully completed
+set -o pipefail; /usr/bin/mysqldump --user=_8b3e45756aa1c354 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _8b3e45756aa1c354 | /usr/bin/gzip >> ./prop.com/private/backups/20240902_120003-prop_com-database.sql.gz
+
+Backup Summary for prop.com at 2024-09-02 12:00:06.372444
+Config  : ./prop.com/private/backups/20240902_120003-prop_com-site_config_backup.json 225.0B
+Database: ./prop.com/private/backups/20240902_120003-prop_com-database.sql.gz         5.6MiB
+Backup for Site prop.com has been successfully completed
+File ./propla.com/private/backups/20240830_180004-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240831_120005-propla_com-database.sql.gz is older than 24 hours
+File ./propla.com/private/backups/20240831_120005-propla_com-site_config_backup.json is older than 24 hours
+File ./propla.com/private/backups/20240830_180004-propla_com-site_config_backup.json is older than 24 hours
+set -o pipefail; /usr/bin/mysqldump --user=_d647b2e9b5077953 --host=127.0.0.1 --port=3306 --password=********** --single-transaction --quick --lock-tables=false _d647b2e9b5077953 | /usr/bin/gzip >> ./propla.com/private/backups/20240902_120006-propla_com-database.sql.gz
+
+Backup Summary for propla.com at 2024-09-02 12:00:06.843580
+Config  : ./propla.com/private/backups/20240902_120006-propla_com-site_config_backup.json 94.0B
+Database: ./propla.com/private/backups/20240902_120006-propla_com-database.sql.gz         252.1KiB
+Backup for Site propla.com has been successfully completed

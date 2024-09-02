@@ -1,0 +1,72 @@
+2024-08-22 11:57:30,538 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'doctype': 'HD Ticket', 'fields': ['name', 'creation', 'subject', 'status', 'priority', 'response_by', 'resolution_by', 'first_responded_on', 'resolution_date'], 'start': 0, 'limit': 20, 'limit_start': 0, 'limit_page_length': 20, 'debug': 0, 'cmd': 'helpdesk.extends.client.get_list'}
+2024-08-22 11:58:09,131 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'doctype': 'HD Ticket', 'fields': ['name', 'creation', 'subject', 'status', 'priority', 'response_by', 'resolution_by', 'first_responded_on', 'resolution_date'], 'start': 0, 'limit': 20, 'limit_start': 0, 'limit_page_length': 20, 'debug': 0, 'cmd': 'helpdesk.extends.client.get_list'}
+2024-08-22 11:58:10,651 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'doctype': 'HD Ticket', 'fields': ['name', 'creation', 'subject', 'status', 'priority', 'response_by', 'resolution_by', 'first_responded_on', 'resolution_date'], 'start': 0, 'limit': 20, 'limit_start': 0, 'limit_page_length': 20, 'debug': 0, 'cmd': 'helpdesk.extends.client.get_list'}
+2024-08-22 11:58:20,489 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'doctype': 'HD Ticket', 'fields': ['name', 'creation', 'subject', 'status', 'priority', 'response_by', 'resolution_by', 'first_responded_on', 'resolution_date'], 'start': 0, 'limit': 20, 'limit_start': 0, 'limit_page_length': 20, 'debug': 0, 'cmd': 'helpdesk.extends.client.get_list'}
+2024-08-27 16:22:54,787 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'cmd': 'frappe.www.login.send_login_link', 'email': 'pradeepreddyp1999@gmail.com'}
+2024-08-27 16:23:00,923 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'cmd': 'frappe.www.login.send_login_link', 'email': 'pradeepreddyp1999@gmail.com'}
+2024-08-27 16:26:43,627 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'cmd': 'frappe.www.login.send_login_link', 'email': 'pradeepreddyp1999@gmail.com'}
+2024-08-28 13:26:19,953 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {'email': 'sairajeshreddy147@gmail.com', 'cmd': 'frappe.email.doctype.newsletter.newsletter.subscribe'}
+2024-09-02 16:15:40,590 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:15:41,138 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:15:54,847 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:15:54,991 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:15:56,874 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:15:56,985 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:16:03,995 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:16:04,104 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:41,781 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:42,341 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:44,392 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:44,521 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:46,358 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:46,479 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:49,049 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
+2024-09-02 16:23:49,197 ERROR frappe New Exception collected in error log
+Site: prop.com
+Form Dict: {}
