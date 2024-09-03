@@ -1,0 +1,570 @@
+2024-08-22 11:18:09,979 DEBUG cd frappe-bench && python3.11 -m venv env
+2024-08-22 11:18:12,266 DEBUG cd frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-22 11:18:13,422 DEBUG cd frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet wheel
+2024-08-22 11:18:14,727 LOG Getting frappe
+2024-08-22 11:18:14,727 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-15 --depth 1 --origin upstream
+2024-08-22 11:18:18,649 LOG Installing frappe
+2024-08-22 11:18:18,649 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe 
+2024-08-22 11:18:40,405 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe && yarn install --check-files
+2024-08-22 11:19:23,677 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-22 11:19:23,804 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-22 11:19:23,805 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-22 11:19:23,805 DEBUG cd frappe-bench && bench build
+2024-08-22 11:19:23,891 INFO /home/mbr-python/.local/bin/bench build
+2024-08-22 11:19:38,042 LOG setting up backups
+2024-08-22 11:19:38,143 LOG backups were set up
+2024-08-22 11:19:38,144 INFO Bench frappe-bench initialized
+2024-08-22 11:20:07,709 INFO /home/mbr-python/.local/bin/bench mew-site prop.com
+2024-08-22 11:20:13,083 INFO /home/mbr-python/.local/bin/bench new-site prop.com
+2024-08-22 11:22:06,394 INFO /home/mbr-python/.local/bin/bench get-app --branch version-15 erpnext
+2024-08-22 11:22:06,779 LOG Getting erpnext
+2024-08-22 11:22:06,779 DEBUG cd ./apps && git clone https://github.com/frappe/erpnext.git --branch version-15 --depth 1 --origin upstream
+2024-08-22 11:22:11,029 LOG Installing erpnext
+2024-08-22 11:22:11,029 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/erpnext 
+2024-08-22 11:22:14,853 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/erpnext && yarn install --check-files
+2024-08-22 11:22:15,123 DEBUG bench build --app erpnext
+2024-08-22 11:22:15,207 INFO /home/mbr-python/.local/bin/bench build --app erpnext
+2024-08-22 11:22:17,274 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-22 11:22:17,401 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-22 11:22:17,401 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-22 11:25:13,258 INFO /home/mbr-python/.local/bin/bench --site prop.com add-to-hosts
+2024-08-22 11:25:18,621 INFO /home/mbr-python/.local/bin/bench get-app hrms
+2024-08-22 11:25:19,014 LOG Getting hrms
+2024-08-22 11:25:19,014 DEBUG cd ./apps && git clone https://github.com/frappe/hrms.git  --depth 1 --origin upstream
+2024-08-22 11:25:20,968 LOG Installing hrms
+2024-08-22 11:25:20,968 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/hrms 
+2024-08-22 11:25:22,124 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/hrms && yarn install --check-files
+2024-08-22 11:25:59,397 DEBUG bench build --app hrms
+2024-08-22 11:25:59,490 INFO /home/mbr-python/.local/bin/bench build --app hrms
+2024-08-22 11:26:12,781 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-22 11:26:12,911 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-22 11:26:12,911 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-22 11:26:36,123 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app frappe
+2024-08-22 11:26:45,018 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app hrms
+2024-08-22 11:28:08,676 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-22 11:28:35,785 INFO /home/mbr-python/.local/bin/bench start
+2024-08-22 11:29:54,995 INFO /home/mbr-python/.local/bin/bench start
+2024-08-22 11:29:55,232 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-22 11:29:55,246 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-22 11:29:55,246 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-22 11:29:55,263 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-22 11:52:18,839 INFO /home/mbr-python/.local/bin/bench get-app helpdesk
+2024-08-22 11:52:19,301 LOG Getting helpdesk
+2024-08-22 11:52:19,301 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk.git  --depth 1 --origin upstream
+2024-08-22 11:52:20,892 LOG Installing helpdesk
+2024-08-22 11:52:20,892 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk 
+2024-08-22 11:52:23,452 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-22 11:53:15,626 DEBUG bench build --app helpdesk
+2024-08-22 11:53:15,889 INFO /home/mbr-python/.local/bin/bench build --app helpdesk
+2024-08-22 11:53:45,375 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-22 11:53:45,504 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-22 11:53:45,504 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-22 11:55:29,568 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app helpdesk
+2024-08-22 11:55:41,530 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app helpdesk
+2024-08-22 11:56:44,271 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app helpdesk
+2024-08-22 11:56:59,249 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-22 11:57:12,467 INFO /home/mbr-python/.local/bin/bench start
+2024-08-22 11:57:12,715 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-22 11:57:12,735 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-22 11:57:12,755 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-22 11:57:12,760 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-22 11:58:32,782 INFO /home/mbr-python/.local/bin/bench --site prop.com uninstall-app helpdesk
+2024-08-22 12:00:01,479 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-22 12:01:01,999 INFO /home/mbr-python/.local/bin/bench get-app helpdesk https://github.com/frappe/helpdesk
+2024-08-22 12:01:11,837 INFO App moved from apps/helpdesk to archived/apps/helpdesk-2024-08-22
+2024-08-22 12:01:11,840 LOG Getting helpdesk
+2024-08-22 12:01:11,840 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk  --depth 1 --origin upstream
+2024-08-22 12:01:13,370 LOG Installing helpdesk
+2024-08-22 12:01:13,370 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk 
+2024-08-22 12:01:15,039 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-22 12:01:58,794 DEBUG bench build --app helpdesk
+2024-08-22 12:01:58,991 INFO /home/mbr-python/.local/bin/bench build --app helpdesk
+2024-08-22 12:02:19,660 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-22 12:02:19,786 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-22 12:02:19,786 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-08-22 12:02:38,449 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app helpdesk
+2024-08-22 12:02:53,307 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-22 12:03:28,604 INFO /home/mbr-python/.local/bin/bench --site prop.com update
+2024-08-22 12:03:28,606 WARNING /home/mbr-python/.local/bin/bench --site prop.com update executed with exit code 2
+2024-08-22 12:03:54,452 INFO /home/mbr-python/.local/bin/bench restart
+2024-08-22 12:04:00,493 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-08-22 12:04:00,620 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-08-22 12:04:00,620 WARNING /home/mbr-python/.local/bin/bench restart executed with exit code 1
+2024-08-22 12:04:03,516 INFO /home/mbr-python/.local/bin/bench start
+2024-08-22 12:04:03,789 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-22 12:04:03,793 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-22 12:04:03,811 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-22 12:04:03,811 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-22 18:00:01,830 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-23 12:00:01,730 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-23 12:01:19,502 INFO /home/mbr-python/.local/bin/bench stary=t
+2024-08-23 12:01:23,850 INFO /home/mbr-python/.local/bin/bench start
+2024-08-23 12:01:24,084 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-23 12:01:24,117 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-23 12:01:24,128 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-23 12:01:24,135 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-23 18:00:01,605 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-24 11:49:40,040 INFO /home/mbr-python/.local/bin/bench start
+2024-08-24 11:49:40,290 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-24 11:49:40,294 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-24 11:49:40,324 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-24 11:49:40,325 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-24 12:00:01,808 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-24 16:58:51,927 INFO /home/mbr-python/.local/bin/bench start
+2024-08-24 16:58:52,204 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-24 16:58:52,222 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-24 16:58:52,223 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-24 16:58:52,232 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-24 18:00:01,842 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-25 12:00:02,140 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-25 17:30:10,214 INFO /home/mbr-python/.local/bin/bench start
+2024-08-25 17:30:10,525 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-25 17:30:10,530 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-25 17:30:10,539 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-25 17:30:10,540 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-25 17:39:31,513 INFO /home/mbr-python/.local/bin/bench start
+2024-08-25 17:39:31,860 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-25 17:39:31,866 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-25 17:39:31,878 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-25 17:39:31,878 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-25 18:00:01,622 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-25 18:15:55,939 INFO /home/mbr-python/.local/bin/bench --site prop.come migrate
+2024-08-25 18:16:17,557 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-26 10:11:55,977 INFO /home/mbr-python/.local/bin/bench start
+2024-08-26 10:11:56,223 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-26 10:11:56,253 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-26 10:11:56,254 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-26 10:11:56,255 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-26 10:18:43,147 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-26 10:20:01,659 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-26 10:37:31,388 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-26 10:43:32,956 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-26 10:44:49,418 INFO /home/mbr-python/.local/bin/bench start
+2024-08-26 10:44:49,669 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-26 10:44:49,675 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-26 10:44:49,686 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-26 10:44:49,716 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-26 10:55:31,138 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-26 10:55:37,846 INFO /home/mbr-python/.local/bin/bench start
+2024-08-26 10:55:38,089 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-26 10:55:38,130 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-26 10:55:38,135 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-26 10:55:38,137 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-26 12:00:02,050 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-26 13:07:34,225 INFO /home/mbr-python/.local/bin/bench start
+2024-08-26 13:07:34,495 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-26 13:07:34,496 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-26 13:07:34,496 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-26 13:07:34,506 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-26 14:51:43,414 INFO /home/mbr-python/.local/bin/bench new-site propla.com
+2024-08-26 14:52:39,695 INFO /home/mbr-python/.local/bin/bench --site propla.com add-to-hosts
+2024-08-26 14:52:59,116 INFO /home/mbr-python/.local/bin/bench --site propla.com list-apps
+2024-08-26 15:35:46,682 INFO /home/mbr-python/.local/bin/bench get-app hrms https://github.com/frappe/hrms
+2024-08-26 18:00:01,883 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-27 10:19:58,078 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 10:19:58,330 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 10:19:58,332 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 10:19:58,338 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 10:19:58,374 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 10:20:21,128 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 10:43:33,962 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 10:44:04,796 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 10:44:05,092 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 10:44:05,095 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 10:44:05,104 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 10:44:05,104 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 10:45:57,674 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 10:46:15,264 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 10:46:15,502 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 10:46:15,509 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 10:46:15,547 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 10:46:15,549 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 10:52:13,810 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 10:52:24,093 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 10:52:24,417 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 10:52:24,439 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 10:52:24,441 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 10:52:24,451 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 11:09:32,975 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 11:09:47,408 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 11:09:47,736 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 11:09:47,751 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 11:09:47,751 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 11:09:47,755 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 11:11:47,858 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 11:11:56,787 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 11:11:57,100 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 11:11:57,115 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 11:11:57,130 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 11:11:57,137 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 12:00:01,856 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-27 14:38:39,783 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 14:38:55,328 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 14:38:55,858 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 14:38:55,859 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 14:38:55,876 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 14:38:55,892 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 14:42:41,001 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 14:42:41,497 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 14:42:41,502 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 14:42:41,508 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 14:42:41,513 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 14:45:04,740 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 14:45:16,331 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 14:45:16,664 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 14:45:16,691 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 14:45:16,702 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 14:45:16,716 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 14:47:58,861 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 14:48:12,841 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 14:48:13,198 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 14:48:13,200 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 14:48:13,212 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 14:48:13,215 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 15:49:07,242 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 15:49:19,310 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 15:49:19,714 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 15:49:19,740 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 15:49:19,759 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 15:49:19,806 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 15:51:41,509 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 15:51:52,189 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 15:51:52,496 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 15:51:52,508 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 15:51:52,513 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 15:51:52,534 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-27 15:56:28,757 INFO /home/mbr-python/.local/bin/bench clear-cache
+2024-08-27 15:56:37,390 INFO /home/mbr-python/.local/bin/bench clear-website-cache
+2024-08-27 15:56:46,019 INFO /home/mbr-python/.local/bin/bench clear-prop.com-cache
+2024-08-27 16:08:56,421 INFO /home/mbr-python/.local/bin/bench clear-prop.com-cache
+2024-08-27 16:08:59,527 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-27 18:00:02,256 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-27 18:17:40,120 INFO /home/mbr-python/.local/bin/bench start
+2024-08-27 18:17:40,480 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-27 18:17:40,483 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-27 18:17:40,521 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-27 18:17:40,521 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-28 11:31:47,924 INFO /home/mbr-python/.local/bin/bench start
+2024-08-28 11:31:48,202 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-28 11:31:48,207 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-28 11:31:48,216 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-28 11:31:48,224 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-28 12:00:01,575 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-28 15:02:56,159 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-28 15:03:07,309 INFO /home/mbr-python/.local/bin/bench start
+2024-08-28 15:03:07,639 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-28 15:03:07,644 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-28 15:03:07,652 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-28 15:03:07,657 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-28 15:09:17,207 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-28 15:09:27,402 INFO /home/mbr-python/.local/bin/bench start
+2024-08-28 15:09:27,741 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-28 15:09:27,744 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-28 15:09:27,745 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-28 15:09:27,791 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-28 15:23:08,034 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-28 15:23:19,456 INFO /home/mbr-python/.local/bin/bench start
+2024-08-28 15:23:19,791 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-28 15:23:19,829 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-28 15:23:19,837 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-28 15:23:19,840 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-28 16:03:23,245 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-28 16:03:31,978 INFO /home/mbr-python/.local/bin/bench start
+2024-08-28 16:03:32,356 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-28 16:03:32,361 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-28 16:03:32,376 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-28 16:03:32,378 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-28 16:06:01,073 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-28 16:06:17,458 INFO /home/mbr-python/.local/bin/bench start
+2024-08-28 16:06:17,737 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-28 16:06:17,740 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-28 16:06:17,741 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-28 16:06:17,745 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-28 16:07:26,487 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-28 18:00:01,623 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-29 10:13:17,658 INFO /home/mbr-python/.local/bin/bench start
+2024-08-29 10:13:17,905 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-29 10:13:17,906 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-29 10:13:17,909 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-29 10:13:17,909 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-29 10:46:27,987 INFO /home/mbr-python/.local/bin/bench setup requirements
+2024-08-29 10:46:28,009 DEBUG /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2024-08-29 10:46:28,741 LOG Installing frappe
+2024-08-29 10:46:28,742 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe 
+2024-08-29 10:46:30,328 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe && yarn install --check-files
+2024-08-29 10:46:31,562 LOG Installing helpdesk
+2024-08-29 10:46:31,562 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk 
+2024-08-29 10:46:42,420 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-08-29 10:46:44,634 LOG Installing hrms
+2024-08-29 10:46:44,634 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/hrms 
+2024-08-29 10:46:45,979 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/hrms && yarn install --check-files
+2024-08-29 10:46:50,283 LOG Installing erpnext
+2024-08-29 10:46:50,284 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/erpnext 
+2024-08-29 10:46:51,589 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/erpnext && yarn install --check-files
+2024-08-29 10:47:09,436 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-29 10:48:29,899 INFO /home/mbr-python/.local/bin/bench start
+2024-08-29 10:48:30,153 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-29 10:48:30,195 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-29 10:48:30,196 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-29 10:48:30,198 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-29 11:40:45,518 INFO /home/mbr-python/.local/bin/bench start
+2024-08-29 11:40:45,770 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-29 11:40:45,776 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-29 11:40:45,785 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-29 11:40:45,810 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-29 12:00:01,947 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-29 13:24:13,742 INFO /home/mbr-python/.local/bin/bench start
+2024-08-29 13:24:14,027 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-29 13:24:14,042 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-29 13:24:14,050 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-29 13:24:14,054 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-29 16:53:35,934 INFO /home/mbr-python/.local/bin/bench version
+2024-08-29 18:00:01,740 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-30 10:42:49,532 INFO /home/mbr-python/.local/bin/bench start
+2024-08-30 10:42:49,774 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-30 10:42:49,780 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-30 10:42:49,795 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-30 10:42:49,796 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-30 10:56:16,113 INFO /home/mbr-python/.local/bin/bench --site prop.com build/migrate/clear-cache
+2024-08-30 10:56:35,827 INFO /home/mbr-python/.local/bin/bench --site prop.com build
+2024-08-30 10:57:30,015 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-30 10:57:46,070 INFO /home/mbr-python/.local/bin/bench --site prop.com clear-cache
+2024-08-30 10:59:29,873 INFO /home/mbr-python/.local/bin/bench --site prop.com build
+2024-08-30 11:00:32,450 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-08-30 11:00:44,357 INFO /home/mbr-python/.local/bin/bench --site prop.com clear-cache
+2024-08-30 11:00:52,487 INFO /home/mbr-python/.local/bin/bench start
+2024-08-30 11:00:52,758 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-30 11:00:52,776 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-30 11:00:52,777 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-30 11:00:52,783 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-30 11:02:40,224 INFO /home/mbr-python/.local/bin/bench start
+2024-08-30 11:02:40,464 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-30 11:02:40,480 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-30 11:02:40,483 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-30 11:02:40,500 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-30 12:00:01,412 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-30 18:00:01,605 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-08-31 10:32:44,530 INFO /home/mbr-python/.local/bin/bench start
+2024-08-31 10:32:44,792 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-08-31 10:32:44,802 INFO /home/mbr-python/.local/bin/bench schedule
+2024-08-31 10:32:44,806 INFO /home/mbr-python/.local/bin/bench watch
+2024-08-31 10:32:44,809 INFO /home/mbr-python/.local/bin/bench worker
+2024-08-31 12:00:01,677 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-09-02 12:00:01,865 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-09-02 13:28:35,422 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 13:28:35,689 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 13:28:35,692 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 13:28:35,703 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 13:28:35,729 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 13:28:43,009 INFO /home/mbr-python/.local/bin/bench version
+2024-09-02 13:29:56,900 INFO /home/mbr-python/.local/bin/bench build
+2024-09-02 13:30:44,290 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 13:30:44,640 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 13:30:44,646 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 13:30:44,666 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 13:30:44,685 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 13:30:54,790 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 13:31:25,793 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 13:31:26,027 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 13:31:26,045 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 13:31:26,075 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 13:31:26,075 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 13:32:49,091 INFO /home/mbr-python/.local/bin/bench --site prop.com clear-cache
+2024-09-02 13:32:54,645 INFO /home/mbr-python/.local/bin/bench --site prop.com build
+2024-09-02 13:38:31,911 INFO /home/mbr-python/.local/bin/bench --site prop.com build
+2024-09-02 13:39:13,449 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 13:39:13,868 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 13:39:13,879 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 13:39:13,879 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 13:39:13,885 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 13:39:26,828 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 13:39:43,626 INFO /home/mbr-python/.local/bin/bench --site prop.com clear-cache
+2024-09-02 13:40:21,197 INFO /home/mbr-python/.local/bin/bench --site prop.com uninstall-app helpdesk
+2024-09-02 13:40:46,545 INFO /home/mbr-python/.local/bin/bench --site prop.com backup
+2024-09-02 13:40:52,977 INFO /home/mbr-python/.local/bin/bench --site prop.com uninstall-app helpdesk
+2024-09-02 13:41:25,633 INFO /home/mbr-python/.local/bin/bench get-app helpdesk
+2024-09-02 13:41:27,110 INFO App moved from apps/helpdesk to archived/apps/helpdesk-2024-09-02
+2024-09-02 13:41:27,119 LOG Getting helpdesk
+2024-09-02 13:41:27,119 DEBUG cd ./apps && git clone https://github.com/frappe/helpdesk.git --branch develop --depth 1 --origin upstream
+2024-09-02 13:41:28,661 LOG Installing helpdesk
+2024-09-02 13:41:28,661 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk 
+2024-09-02 13:41:30,509 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/helpdesk && yarn install --check-files
+2024-09-02 13:41:54,997 INFO /home/mbr-python/.local/bin/bench version
+2024-09-02 13:42:04,488 DEBUG bench build --app helpdesk
+2024-09-02 13:42:04,572 INFO /home/mbr-python/.local/bin/bench build --app helpdesk
+2024-09-02 13:43:39,168 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-02 13:43:39,293 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-02 13:43:39,293 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-02 13:43:39,406 INFO A newer version of bench is available: 5.22.8 → 5.22.9
+2024-09-02 13:44:03,262 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app helpdesk
+2024-09-02 13:44:25,562 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 13:44:25,802 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 13:44:25,844 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 13:44:25,848 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 13:44:25,849 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 13:44:37,415 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 13:45:04,892 INFO /home/mbr-python/.local/bin/bench --site erp.example.com restore /sites/erp.example.com/private/backups/20240830_110530-erp_example_com-database.sql.gz
+2024-09-02 13:46:11,115 INFO /home/mbr-python/.local/bin/bench --site prop.com restore /sites/prop.com.com/private/backups/20240902_120003-prop_com-database.sql.gz
+2024-09-02 13:46:29,920 INFO /home/mbr-python/.local/bin/bench --site prop.com restore /sites/prop.com/private/backups/20240902_120003-prop_com-database.sql.gz
+2024-09-02 13:47:45,866 INFO /home/mbr-python/.local/bin/bench --site prop.com restore /sites/prop.com/private/backups/20240902_134046-prop_com-database.sql.gz
+2024-09-02 13:48:04,215 INFO /home/mbr-python/.local/bin/bench --site prop.com restore /sites/prop.com/private/backups/20240902_134054-prop_com-database.sql.gz
+2024-09-02 13:52:08,456 INFO /home/mbr-python/.local/bin/bench --site prop.com restore /home/mbr-python/Django/proplahrmsnew/frappe-bench/sites/prop.com/private/backups/20240902_134054-prop_com-database.sql.gz
+2024-09-02 13:53:06,844 INFO /home/mbr-python/.local/bin/bench update --reset
+2024-09-02 13:53:06,855 WARNING /home/mbr-python/.local/bin/bench update --reset executed with exit code 1
+2024-09-02 13:53:06,954 INFO A newer version of bench is available: 5.22.8 → 5.22.9
+2024-09-02 13:53:07,061 INFO /home/mbr-python/.local/bin/bench migrate
+2024-09-02 13:53:07,682 INFO /home/mbr-python/.local/bin/bench build
+2024-09-02 13:54:33,762 INFO /home/mbr-python/.local/bin/bench migrate
+2024-09-02 13:54:45,497 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 13:55:09,360 INFO /home/mbr-python/.local/bin/bench --site prop.com clear-cache
+2024-09-02 13:55:23,319 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 13:55:23,596 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 13:55:23,624 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 13:55:23,629 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 13:55:23,637 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 15:06:12,706 INFO /home/mbr-python/.local/bin/bench version
+2024-09-02 15:07:37,977 INFO /home/mbr-python/.local/bin/bench get-app frappe
+2024-09-02 15:07:41,201 INFO App moved from apps/frappe to archived/apps/frappe-2024-09-02
+2024-09-02 15:07:41,209 LOG Getting frappe
+2024-09-02 15:07:41,210 DEBUG cd ./apps && git clone https://github.com/frappe/frappe.git  --depth 1 --origin upstream
+2024-09-02 15:07:44,677 LOG Installing frappe
+2024-09-02 15:07:44,677 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && /home/mbr-python/Django/proplahrmsnew/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe 
+2024-09-02 15:07:47,841 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe && yarn install --check-files
+2024-09-02 15:08:24,883 DEBUG bench build --app frappe
+2024-09-02 15:08:24,972 INFO /home/mbr-python/.local/bin/bench build --app frappe
+2024-09-02 15:08:25,066 INFO /home/mbr-python/.local/bin/bench --site uninstall-app frappe
+2024-09-02 15:08:48,296 INFO /home/mbr-python/.local/bin/bench --site prop.com uninstall-app frappe
+2024-09-02 15:08:59,998 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-02 15:09:00,126 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-02 15:09:00,126 WARNING restarting supervisor group `frappe:` failed. Use `bench restart` to retry.
+2024-09-02 15:09:00,252 INFO A newer version of bench is available: 5.22.8 → 5.22.9
+2024-09-02 15:09:24,933 INFO /home/mbr-python/.local/bin/bench --site prop.com install-app frappe
+2024-09-02 15:09:33,111 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 15:09:33,374 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 15:09:33,376 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 15:09:33,382 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 15:09:33,407 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 15:09:47,762 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 15:10:33,560 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 15:10:33,816 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 15:10:33,822 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 15:10:33,824 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 15:10:33,855 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 15:11:31,786 INFO /home/mbr-python/.local/bin/bench --site prop.com build
+2024-09-02 15:12:12,399 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 15:12:15,359 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 15:12:15,663 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 15:12:15,703 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 15:12:15,705 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 15:12:15,713 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 15:12:18,191 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 15:12:37,869 INFO /home/mbr-python/.local/bin/bench --site prop.com clear-cache
+2024-09-02 15:12:43,100 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 15:12:43,347 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 15:12:43,359 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 15:12:43,379 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 15:12:43,390 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 15:34:28,755 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 15:34:29,034 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 15:34:29,040 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 15:34:29,072 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 15:34:29,079 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 15:34:43,459 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 15:34:57,783 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 15:34:58,037 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 15:34:58,059 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 15:34:58,062 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 15:34:58,073 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:00:59,833 INFO /home/mbr-python/.local/bin/bench version
+2024-09-02 16:04:35,697 INFO /home/mbr-python/.local/bin/bench build
+2024-09-02 16:04:50,185 INFO /home/mbr-python/.local/bin/bench --site prop.com build
+2024-09-02 16:11:18,180 INFO /home/mbr-python/.local/bin/bench version
+2024-09-02 16:11:32,786 INFO /home/mbr-python/.local/bin/bench --site prop.com build
+2024-09-02 16:12:47,784 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 16:12:55,167 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:12:55,534 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:12:55,540 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:12:55,563 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:12:55,579 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:13:04,048 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:13:04,279 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:13:04,288 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:13:04,292 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:13:04,328 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:13:06,290 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:13:06,521 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:13:06,521 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:13:06,529 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:13:06,570 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:13:41,951 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:13:42,248 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:13:42,248 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:13:42,253 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:13:42,259 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:14:33,299 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:14:33,537 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:14:33,546 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:14:33,574 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:14:33,586 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:14:37,823 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 16:15:26,583 INFO /home/mbr-python/.local/bin/bench --site prop.com clear-cache
+2024-09-02 16:15:34,204 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:15:34,451 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:15:34,474 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:15:34,490 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:15:34,496 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:23:17,600 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:23:17,951 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:23:17,957 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:23:17,989 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:23:17,994 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:24:27,064 INFO /home/mbr-python/.local/bin/bench --site prop.com restore /home/mbr-python/Django/proplahrmsnew/frappe-bench/sites/prop.com/private/backups/20240902_134054-prop_com-database.sql.gz
+2024-09-02 16:24:54,564 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 16:25:11,893 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:25:12,149 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:25:12,152 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:25:12,167 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:25:12,174 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:45:15,486 INFO /home/mbr-python/.local/bin/bench start
+2024-09-02 16:45:15,725 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-02 16:45:15,725 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-02 16:45:15,731 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-02 16:45:15,760 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-02 16:46:33,406 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 17:33:53,569 INFO /home/mbr-python/.local/bin/bench --site prop.com migrate
+2024-09-02 18:00:01,903 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-09-03 10:43:03,980 INFO /home/mbr-python/.local/bin/bench start
+2024-09-03 10:43:04,309 INFO /home/mbr-python/.local/bin/bench watch
+2024-09-03 10:43:04,332 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-03 10:43:04,333 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-03 10:43:04,339 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-03 12:00:01,520 INFO /home/mbr-python/.local/bin/bench --verbose --site all backup
+2024-09-03 12:36:59,866 INFO /usr/local/bin/bench setup production dcode-frappe
+2024-09-03 12:36:59,875 DEBUG sudo /usr/bin/python3 -m pip install ansible
+2024-09-03 12:37:29,466 DEBUG bench setup role fail2ban
+2024-09-03 12:37:30,454 INFO /usr/local/bin/bench setup role fail2ban
+2024-09-03 12:38:01,437 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-09-03 12:38:01,468 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-09-03 12:38:01,468 LOG Updated supervisord.conf: 'chown' changed from '' to 'dcode-frappe:dcode-frappe'
+2024-09-03 12:38:01,620 WARNING /usr/local/bin/bench setup production dcode-frappe executed with exit code 1
+2024-09-03 12:38:01,731 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-09-03 12:38:21,358 INFO /home/mbr-python/.local/bin/bench restart
+2024-09-03 12:38:38,512 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-03 12:38:39,182 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-03 12:38:39,183 WARNING /home/mbr-python/.local/bin/bench restart executed with exit code 1
+2024-09-03 12:38:39,876 INFO A newer version of bench is available: 5.22.8 → 5.22.9
+2024-09-03 12:38:45,350 INFO /usr/local/bin/bench setup production dcode-frappe
+2024-09-03 12:38:45,356 LOG Updated supervisord.conf: 'chmod' changed from '0700                       ; sockef file mode (default 0700)' to '0760'
+2024-09-03 12:38:45,356 LOG Updated supervisord.conf: 'chown' changed from '' to 'dcode-frappe:dcode-frappe'
+2024-09-03 12:38:53,520 WARNING /usr/local/bin/bench setup production dcode-frappe executed with exit code 1
+2024-09-03 12:38:53,621 INFO A newer version of bench is available: 5.22.6 → 5.22.9
+2024-09-03 12:39:03,223 INFO /home/mbr-python/.local/bin/bench restart
+2024-09-03 12:39:03,494 DEBUG cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe:
+2024-09-03 12:39:03,630 WARNING cd /home/mbr-python/Django/proplahrmsnew/frappe-bench && sudo supervisorctl restart frappe: executed with exit code 2
+2024-09-03 12:39:03,630 WARNING /home/mbr-python/.local/bin/bench restart executed with exit code 1
+2024-09-03 12:39:03,733 INFO A newer version of bench is available: 5.22.8 → 5.22.9
+2024-09-03 12:39:21,525 INFO /home/mbr-python/.local/bin/bench start
+2024-09-03 12:39:21,765 INFO /home/mbr-python/.local/bin/bench schedule
+2024-09-03 12:39:21,799 INFO /home/mbr-python/.local/bin/bench serve --port 8000
+2024-09-03 12:39:21,805 INFO /home/mbr-python/.local/bin/bench worker
+2024-09-03 12:39:21,807 INFO /home/mbr-python/.local/bin/bench watch

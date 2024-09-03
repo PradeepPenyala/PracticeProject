@@ -1,0 +1,79 @@
+2024-08-25 18:49:53,451 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for prop.com
+2024-08-25 18:49:54,918 ERROR scheduler Skipped queueing erpnext.accounts.doctype.process_payment_reconciliation.process_payment_reconciliation.trigger_reconciliation_for_queued_docs because it was found in queue for prop.com
+2024-08-25 18:49:55,017 ERROR scheduler Skipped queueing erpnext.manufacturing.doctype.bom_update_log.bom_update_log.resume_bom_cost_update_jobs because it was found in queue for prop.com
+2024-08-25 18:49:55,052 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for prop.com
+2024-08-25 18:49:55,054 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for prop.com
+2024-08-25 18:49:55,056 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for prop.com
+2024-08-25 18:49:55,061 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for prop.com
+2024-08-25 18:49:55,063 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for prop.com
+2024-08-25 18:49:55,070 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for prop.com
+2024-08-25 18:49:55,071 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for prop.com
+2024-08-25 18:49:55,073 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for prop.com
+2024-08-25 18:49:55,075 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for prop.com
+2024-08-26 14:51:50,452 ERROR scheduler Exception in Enqueue Events for Site propla.com
+Traceback (most recent call last):
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 75, in enqueue_events_for_site
+    if is_scheduler_inactive():
+       ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 117, in is_scheduler_inactive
+    if is_scheduler_disabled(verbose=verbose):
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/utils/scheduler.py", line 130, in is_scheduler_disabled
+    frappe.db.get_single_value("System Settings", "enable_scheduler")
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 844, in get_single_value
+    df = frappe.get_meta(doctype).get_field(fieldname)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 1360, in get_meta
+    return frappe.model.meta.get_meta(doctype, cached=cached)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 63, in get_meta
+    meta = Meta(doctype)
+           ^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 119, in __init__
+    self.process()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 142, in process
+    self.set_custom_permissions()
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 524, in set_custom_permissions
+    custom_perms = frappe.get_all(
+                   ^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 2057, in get_all
+    return get_list(doctype, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/__init__.py", line 2032, in get_list
+    return frappe.model.db_query.DatabaseQuery(doctype).execute(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/db_query.py", line 185, in execute
+    self.columns = self.get_table_columns()
+                   ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/db_query.py", line 546, in get_table_columns
+    return get_table_columns(self.doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/model/meta.py", line 73, in get_table_columns
+    return frappe.db.get_table_columns(doctype)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/mbr-python/Django/proplahrmsnew/frappe-bench/apps/frappe/frappe/database/database.py", line 1197, in get_table_columns
+    raise self.TableMissingError("DocType", doctype)
+pymysql.err.ProgrammingError: ('DocType', 'Custom DocPerm')
+2024-08-27 18:09:53,476 ERROR scheduler Skipped queueing helpdesk.search.build_index_if_not_exists because it was found in queue for prop.com
+2024-08-27 18:10:05,810 ERROR scheduler Skipped queueing hrms.hr.doctype.interview.interview.send_interview_reminder because it was found in queue for prop.com
+2024-08-27 18:13:24,270 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for prop.com
+2024-08-27 18:13:24,965 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for prop.com
+2024-08-27 18:13:24,980 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for prop.com
+2024-08-28 15:31:21,963 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for prop.com
+2024-08-28 15:31:21,965 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for prop.com
+2024-08-28 15:31:21,967 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for prop.com
+2024-08-28 15:31:21,968 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for prop.com
+2024-08-28 15:31:21,970 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for prop.com
+2024-08-28 15:31:21,971 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for prop.com
+2024-08-28 15:31:22,018 ERROR scheduler Skipped queueing frappe.core.doctype.prepared_report.prepared_report.expire_stalled_report because it was found in queue for propla.com
+2024-08-28 15:31:22,021 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for propla.com
+2024-08-28 15:31:22,022 ERROR scheduler Skipped queueing frappe.deferred_insert.save_to_db because it was found in queue for propla.com
+2024-08-28 15:31:22,024 ERROR scheduler Skipped queueing frappe.utils.global_search.sync_global_search because it was found in queue for propla.com
+2024-08-28 15:31:22,025 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.notify_unreplied because it was found in queue for propla.com
+2024-08-28 15:31:22,027 ERROR scheduler Skipped queueing frappe.twofactor.delete_all_barcodes_for_users because it was found in queue for propla.com
+2024-08-28 15:31:22,028 ERROR scheduler Skipped queueing frappe.website.doctype.web_page.web_page.check_publish_status because it was found in queue for propla.com
+2024-08-28 15:31:22,030 ERROR scheduler Skipped queueing frappe.oauth.delete_oauth2_data because it was found in queue for propla.com
+2024-08-28 15:41:24,130 ERROR scheduler Skipped queueing frappe.automation.doctype.reminder.reminder.send_reminders because it was found in queue for propla.com
+2024-08-28 15:41:24,131 ERROR scheduler Skipped queueing frappe.monitor.flush because it was found in queue for propla.com
+2024-08-28 15:41:24,133 ERROR scheduler Skipped queueing frappe.email.queue.flush because it was found in queue for propla.com
+2024-08-28 15:41:24,136 ERROR scheduler Skipped queueing frappe.email.doctype.email_account.email_account.pull because it was found in queue for propla.com
